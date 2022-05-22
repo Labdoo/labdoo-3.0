@@ -1,0 +1,192 @@
+diff --git a/src/Controller/BlocksController.php b/src/Controller/BlocksController.php
+index b67149c7516611694d4e77578b84a3962f3ab4dd..9e3f14a07147705d53315848dc8bc4798fda7f5b 100644
+--- a/src/Controller/BlocksController.php
++++ b/src/Controller/BlocksController.php
+@@ -90,7 +90,7 @@ class BlocksController extends ControllerBase {
+ 
+     foreach ($customBlocks as $customBlock) {
+       if (array_key_exists('drush', $form) && $form['drush'] === TRUE) {
+-        drush_log('Exported "' . $customBlock['info'] . '"', 'ok');
++        drush_log('Exported "' . $customBlock['info'] . '"', 'notice');
+       }
+       StructureSyncHelper::logMessage('Exported "' . $customBlock['info'] . '"');
+     }
+@@ -245,7 +245,7 @@ class BlocksController extends ControllerBase {
+     }
+ 
+     if (array_key_exists('drush', $context) && $context['drush'] === TRUE) {
+-      drush_log('Deleted custom blocks that were not in config', 'ok');
++      drush_log('Deleted custom blocks that were not in config', 'notice');
+     }
+     StructureSyncHelper::logMessage('Deleted custom blocks that were not in config');
+   }
+@@ -296,7 +296,7 @@ class BlocksController extends ControllerBase {
+         $blockContent->save();
+ 
+         if (array_key_exists('drush', $context) && $context['drush'] === TRUE) {
+-          drush_log('Imported "' . $block['info'] . '"', 'ok');
++          drush_log('Imported "' . $block['info'] . '"', 'notice');
+         }
+         StructureSyncHelper::logMessage('Imported "' . $block['info'] . '"');
+       }
+@@ -319,7 +319,7 @@ class BlocksController extends ControllerBase {
+             }
+ 
+             if (array_key_exists('drush', $context) && $context['drush'] === TRUE) {
+-              drush_log('Updated "' . $block['info'] . '"', 'ok');
++              drush_log('Updated "' . $block['info'] . '"', 'notice');
+             }
+             StructureSyncHelper::logMessage('Updated "' . $block['info'] . '"');
+ 
+@@ -372,7 +372,7 @@ class BlocksController extends ControllerBase {
+       $blockContent->save();
+ 
+       if (array_key_exists('drush', $context) && $context['drush'] === TRUE) {
+-        drush_log('Imported "' . $block['info'] . '"', 'ok');
++        drush_log('Imported "' . $block['info'] . '"', 'notice');
+       }
+       StructureSyncHelper::logMessage('Imported "' . $block['info'] . '"');
+     }
+@@ -390,7 +390,7 @@ class BlocksController extends ControllerBase {
+       ->delete($entities);
+ 
+     if (array_key_exists('drush', $context) && $context['drush'] === TRUE) {
+-      drush_log('Deleted all custom blocks', 'ok');
++      drush_log('Deleted all custom blocks', 'notice');
+     }
+     StructureSyncHelper::logMessage('Deleted all custom blocks');
+   }
+@@ -416,7 +416,7 @@ class BlocksController extends ControllerBase {
+       $blockContent->save();
+ 
+       if (array_key_exists('drush', $context) && $context['drush'] === TRUE) {
+-        drush_log('Imported "' . $block['info'] . '"', 'ok');
++        drush_log('Imported "' . $block['info'] . '"', 'notice');
+       }
+       StructureSyncHelper::logMessage('Imported "' . $block['info'] . '"');
+     }
+diff --git a/src/Controller/MenuLinksController.php b/src/Controller/MenuLinksController.php
+index 714652dab5bf5bcc421233a7a6387048d9383ca2..78eeb69f3bdcce38e2eabb898b98a5428cf9c8bd 100755
+--- a/src/Controller/MenuLinksController.php
++++ b/src/Controller/MenuLinksController.php
+@@ -75,7 +75,7 @@ class MenuLinksController extends ControllerBase {
+       ];
+ 
+       if (array_key_exists('drush', $form) && $form['drush'] === TRUE) {
+-        drush_log('Exported "' . $menuLink->title->getValue()[0]['value'] . '" of menu "' . $menuLink->menu_name->getValue()[0]['value'] . '"', 'ok');
++        drush_log('Exported "' . $menuLink->title->getValue()[0]['value'] . '" of menu "' . $menuLink->menu_name->getValue()[0]['value'] . '"', 'notice');
+       }
+       StructureSyncHelper::logMessage('Exported "' . $menuLink->title->value . '" of menu "' . $menuLink->menu_name->value . '"');
+     }
+@@ -232,7 +232,7 @@ class MenuLinksController extends ControllerBase {
+     }
+ 
+     if (array_key_exists('drush', $context) && $context['drush'] === TRUE) {
+-      drush_log('Deleted menu links that were not in config', 'ok');
++      drush_log('Deleted menu links that were not in config', 'notice');
+     }
+     StructureSyncHelper::logMessage('Deleted menu links that were not in config');
+   }
+@@ -341,7 +341,7 @@ class MenuLinksController extends ControllerBase {
+           }
+ 
+           if (array_key_exists('drush', $context) && $context['drush'] === TRUE) {
+-            drush_log('Imported "' . $menuLink['title'] . '" into ' . $menuLink['menu_name'], 'ok');
++            drush_log('Imported "' . $menuLink['title'] . '" into ' . $menuLink['menu_name'], 'notice');
+           }
+           StructureSyncHelper::logMessage('Imported "' . $menuLink['title'] . '" into ' . $menuLink['menu_name']);
+ 
+@@ -397,7 +397,7 @@ class MenuLinksController extends ControllerBase {
+       ])->save();
+ 
+       if (array_key_exists('drush', $context) && $context['drush'] === TRUE) {
+-        drush_log('Imported "' . $menuLink['title'] . '" into "' . $menuLink['menu_name'] . '" menu', 'ok');
++        drush_log('Imported "' . $menuLink['title'] . '" into "' . $menuLink['menu_name'] . '" menu', 'notice');
+       }
+       StructureSyncHelper::logMessage('Imported "' . $menuLink['title'] . '" into "' . $menuLink['menu_name'] . '" menu');
+     }
+@@ -415,7 +415,7 @@ class MenuLinksController extends ControllerBase {
+       ->delete($entities);
+ 
+     if (array_key_exists('drush', $context) && $context['drush'] === TRUE) {
+-      drush_log('Deleted all (content) menu links', 'ok');
++      drush_log('Deleted all (content) menu links', 'notice');
+     }
+     StructureSyncHelper::logMessage('Deleted all (content) menu links');
+   }
+@@ -442,7 +442,7 @@ class MenuLinksController extends ControllerBase {
+       ])->save();
+ 
+       if (array_key_exists('drush', $context) && $context['drush'] === TRUE) {
+-        drush_log('Imported "' . $menuLink['title'] . '" into "' . $menuLink['menu_name'] . '" menu', 'ok');
++        drush_log('Imported "' . $menuLink['title'] . '" into "' . $menuLink['menu_name'] . '" menu', 'notice');
+       }
+       StructureSyncHelper::logMessage('Imported "' . $menuLink['title'] . '" into "' . $menuLink['menu_name'] . '" menu');
+     }
+diff --git a/src/Controller/TaxonomiesController.php b/src/Controller/TaxonomiesController.php
+index 910e6d1b434133c374befeb0078d5d4ce4fae0d2..fa936d99116f773e54e37c0b28331613b82945d9 100755
+--- a/src/Controller/TaxonomiesController.php
++++ b/src/Controller/TaxonomiesController.php
+@@ -144,7 +144,7 @@ class TaxonomiesController extends ControllerBase {
+       $this->config->set('taxonomies.' . $vocabulary, $taxonomies)->save();
+ 
+       if (array_key_exists('drush', $form) && $form['drush'] === TRUE) {
+-        drush_log('Exported ' . $vocabulary, 'ok');
++        drush_log('Exported ' . $vocabulary, 'notice');
+       }
+       StructureSyncHelper::logMessage('Exported ' . $vocabulary);
+     }
+@@ -311,7 +311,7 @@ class TaxonomiesController extends ControllerBase {
+     }
+ 
+     if (array_key_exists('drush', $context) && $context['drush'] === TRUE) {
+-      drush_log('Deleted taxonomies that were not in config', 'ok');
++      drush_log('Deleted taxonomies that were not in config', 'notice');
+     }
+     StructureSyncHelper::logMessage('Deleted taxonomies that were not in config');
+   }
+@@ -465,7 +465,7 @@ class TaxonomiesController extends ControllerBase {
+             }
+ 
+             if (array_key_exists('drush', $context) && $context['drush'] === TRUE) {
+-              drush_log('Imported "' . $taxonomy['name'] . '" into ' . $vid, 'ok');
++              drush_log('Imported "' . $taxonomy['name'] . '" into ' . $vid, 'notice');
+             }
+             StructureSyncHelper::logMessage('Imported "' . $taxonomy['name'] . '" into ' . $vid);
+ 
+@@ -494,7 +494,7 @@ class TaxonomiesController extends ControllerBase {
+ 
+     StructureSyncHelper::logMessage('Flushing all caches');
+     if (array_key_exists('drush', $context) && $context['drush'] === TRUE) {
+-      drush_log('Flushing all caches', 'ok');
++      drush_log('Flushing all caches', 'notice');
+     }
+ 
+     drupal_flush_all_caches();
+@@ -615,7 +615,7 @@ class TaxonomiesController extends ControllerBase {
+                 }
+ 
+                 if (array_key_exists('drush', $context) && $context['drush'] === TRUE) {
+-                  drush_log('Imported "' . $taxonomy['name'] . '" into ' . $vid, 'ok');
++                  drush_log('Imported "' . $taxonomy['name'] . '" into ' . $vid, 'notice');
+                 }
+                 StructureSyncHelper::logMessage('Imported "' . $taxonomy['name'] . '" into ' . $vid);
+ 
+@@ -675,7 +675,7 @@ class TaxonomiesController extends ControllerBase {
+     $controller->delete($entities);
+ 
+     if (array_key_exists('drush', $context) && $context['drush'] === TRUE) {
+-      drush_log('Deleted all taxonomies', 'ok');
++      drush_log('Deleted all taxonomies', 'notice');
+     }
+     StructureSyncHelper::logMessage('Deleted all taxonomies');
+   }
+@@ -782,7 +782,7 @@ class TaxonomiesController extends ControllerBase {
+               }
+ 
+               if (array_key_exists('drush', $context) && $context['drush'] === TRUE) {
+-                drush_log('Imported "' . $taxonomy['name'] . '" into ' . $vid, 'ok');
++                drush_log('Imported "' . $taxonomy['name'] . '" into ' . $vid, 'notice');
+               }
+               StructureSyncHelper::logMessage('Imported "' . $taxonomy['name'] . '" into ' . $vid);
+ 
