@@ -1,0 +1,23 @@
+diff --git a/core/modules/responsive_image/src/Plugin/migrate/source/d7/ResponsiveImageStyles.php b/core/modules/responsive_image/src/Plugin/migrate/source/d7/ResponsiveImageStyles.php
+index a5da895dd8..c4a72db0ad 100644
+--- a/core/modules/responsive_image/src/Plugin/migrate/source/d7/ResponsiveImageStyles.php
++++ b/core/modules/responsive_image/src/Plugin/migrate/source/d7/ResponsiveImageStyles.php
+@@ -2,8 +2,8 @@
+ 
+ namespace Drupal\responsive_image\Plugin\migrate\source\d7;
+ 
+-use Drupal\migrate\Plugin\migrate\source\SqlBase;
+ use Drupal\migrate\Row;
++use Drupal\migrate_drupal\Plugin\migrate\source\DrupalSqlBase;
+ 
+ /**
+  * Gets Drupal responsive image styles source from database.
+@@ -20,7 +20,7 @@
+  *   source_module = "picture"
+  * )
+  */
+-class ResponsiveImageStyles extends SqlBase {
++class ResponsiveImageStyles extends DrupalSqlBase {
+ 
+   /**
+    * {@inheritdoc}

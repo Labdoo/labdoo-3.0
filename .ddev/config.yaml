@@ -15,6 +15,9 @@ mutagen_enabled: false
 use_dns_when_possible: true
 composer_version: ""
 web_environment: []
+host_phpmyadmin_port: "8036"
+phpmyadmin_port: "8036"
+phpmyadmin_https_port: "8037"
 
 # Key features of ddev's config.yaml:
 
@@ -125,11 +128,11 @@ web_environment: []
 # The host port binding for the ddev-dbserver can be explicitly specified. It is dynamic
 # unless explicitly specified.
 
-# phpmyadmin_port: "8036"
+ # phpmyadmin_port: "8036"
 # phpmyadmin_https_port: "8037"
 # The PHPMyAdmin ports can be changed from the default 8036 and 8037
 
-# host_phpmyadmin_port: "8036"
+ #host_phpmyadmin_port: "8036"
 # The phpmyadmin (dba) port is not normally bound on the host at all, instead being routed
 # through ddev-router, but it can be specified and bound.
 
