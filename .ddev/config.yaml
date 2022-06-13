@@ -18,6 +18,8 @@ web_environment: []
 host_phpmyadmin_port: "8036"
 phpmyadmin_port: "8036"
 phpmyadmin_https_port: "8037"
+mailhog_port: "8025"
+mailhog_https_port: "8026"
 
 # Key features of ddev's config.yaml:
 
