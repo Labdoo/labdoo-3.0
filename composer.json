@@ -24,6 +24,7 @@
         "drupal/core-composer-scaffold": "^9",
         "drupal/core-project-message": "^9",
         "drupal/core-recommended": "^9",
+        "drupal/country": "^1.0",
         "drupal/devel": "^4.1",
         "drupal/field_group": "^3.2",
         "drupal/flexslider": "^2.0",
