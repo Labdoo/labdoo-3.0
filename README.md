@@ -14,10 +14,11 @@ You can install and develop locally using DDEV or entirely in the Cloud using Gi
 Once those are installed and this repository is cloned, from the project root you cloned the repository into, start the DDEV environment using the command
 `ddev start`.
 
-Note that unlike the Gitpod start below, DDEV locally doesn't automatically install a Drupal site.  To setup for local development you can use the  `.scripts/dev-start.sh` script which will
-1.  Install Drupal using the standard profile
-2.  Run any Drupal database updates
-3.  Import the configuration in config/default (twice in case the first import enables additional configuration, e.g. for config_ignore & config_split)
+Note that unlike the Gitpod start below, DDEV locally doesn't automatically install a Drupal site.  To setup for local development you can use the  `.scripts/dev-setup.sh` script which will
+1.  Install drush using composer
+2.  Install Drupal using the standard profile
+3.  Run any Drupal database updates
+4.  Import the configuration in config/default (twice in case the first import enables additional configuration, e.g. for config_ignore & config_split)
 
 Remembering to prefix most commands like composer, drush, etc with ddev.
 ## Developing entirely in the cloud using Gitpod.
