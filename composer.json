@@ -26,6 +26,7 @@
         "drupal/core-recommended": "^9",
         "drupal/country": "^1.0",
         "drupal/devel": "^4.1",
+        "drupal/entity_reference_revisions": "^1.9",
         "drupal/field_group": "^3.2",
         "drupal/flexslider": "^2.0",
         "drupal/geocoder": "^3.26",
