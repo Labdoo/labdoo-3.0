@@ -15,11 +15,9 @@ mutagen_enabled: false
 use_dns_when_possible: true
 composer_version: ""
 web_environment: []
-host_phpmyadmin_port: "8036"
-phpmyadmin_port: "8036"
-phpmyadmin_https_port: "8037"
-mailhog_port: "8025"
-mailhog_https_port: "8026"
+# host_phpmyadmin_port: "8302"
+# phpmyadmin_port: "8302"
+
 
 # Key features of ddev's config.yaml:
 
