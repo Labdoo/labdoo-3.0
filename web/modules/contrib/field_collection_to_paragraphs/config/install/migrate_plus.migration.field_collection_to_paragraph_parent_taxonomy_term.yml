@@ -1,0 +1,37 @@
+id: field_collection_to_paragraph_parent_taxonomy_term
+class: Drupal\field_collection_to_paragraphs\Plugin\migrate\FieldCollectionItemParentSourceMigration
+label: 'Paragraph items to parent taxonomy terms'
+migration_group: field_collection_to_paragraphs
+migration_tags:
+  - 'Drupal 8'
+  - 'Field Collections'
+  - 'Paragraphs'
+  - 'Parent'
+  - 'Taxonomy term'
+source:
+ plugin: d8_field_collection:taxonomy_term
+ constants:
+   revision_log: 'Updated by field_collections_to_paragraphs migration.'
+process:
+  tid: tid
+  revision_log: 'constants/revision_log'
+destination:
+ plugin: 'entity:taxonomy_term'
+migration_dependencies:
+  required:
+    - field_collection_to_paragraph_type
+    - field_collection_to_paragraph_field_storage
+    - field_collection_to_paragraph_field_instance
+    - field_collection_to_paragraph_field_entity_view
+    - field_collection_to_paragraph_field_entity_form_display
+    - field_collection_to_paragraph_parent_field_storage
+    - field_collection_to_paragraph_item
+    - field_collection_to_paragraph_parent_field_entity_view
+    - field_collection_to_paragraph_parent_field_entity_form_display
+dependencies:
+  module:
+    - field_collection
+    - paragraphs
+  enforced:
+    module:
+      - field_collection_to_paragraphs

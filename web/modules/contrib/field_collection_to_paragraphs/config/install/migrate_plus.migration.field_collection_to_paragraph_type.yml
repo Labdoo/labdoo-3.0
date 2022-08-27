@@ -1,0 +1,23 @@
+id: field_collection_to_paragraph_type
+label: 'Field Collection type to Paragraphs field type'
+migration_group: field_collection_to_paragraphs
+migration_tags:
+  - 'Drupal 8'
+  - 'Field Collections'
+  - 'Paragraphs'
+  - 'Paragraphs type'
+source:
+  plugin: d8_field_collection_paragraph_type
+process:
+  id: id
+  label: label
+destination:
+  plugin: entity:paragraphs_type
+migration_dependencies: {  }
+dependencies:
+  module:
+    - field_collection
+    - paragraphs
+  enforced:
+    module:
+      - field_collection_to_paragraphs

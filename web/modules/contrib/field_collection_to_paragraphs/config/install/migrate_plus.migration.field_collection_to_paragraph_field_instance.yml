@@ -1,0 +1,42 @@
+id: field_collection_to_paragraph_field_instance
+label: 'Field instances for Field Collection Paragraphs'
+migration_group: field_collection_to_paragraphs
+migration_tags:
+  - 'Drupal 8'
+  - 'Field Collections'
+  - 'Paragraphs'
+  - 'Field Storage instance'
+source:
+  plugin: d8_field_collection_field_instance
+  constants:
+    entity_type: paragraph
+process:
+  label: 'data/label'
+  field_name: 'data/field_name'
+  entity_type: constants/entity_type
+  bundle:
+    - plugin: migration_lookup
+      source: 'field_collection_bundle_lookup'
+      migration: field_collection_to_paragraph_type
+    - plugin: skip_on_empty
+      method: row
+  description: 'data/description'
+  required: 'data/required'
+  translatable: 'data/translatable'
+  default_value: 'data/default_value'
+  default_value_callback: 'data/default_value_callback'
+  settings: 'data/settings'
+  field_type: 'data/field_type'
+destination:
+  plugin: entity:field_config
+migration_dependencies:
+  required:
+    - field_collection_to_paragraph_type
+    - field_collection_to_paragraph_field_storage
+dependencies:
+  module:
+    - field_collection
+    - paragraphs
+  enforced:
+    module:
+      - field_collection_to_paragraphs

@@ -1,0 +1,38 @@
+id: field_collection_to_paragraph_parent_node
+class: Drupal\field_collection_to_paragraphs\Plugin\migrate\FieldCollectionItemParentSourceMigration
+label: 'Paragraph items to parent nodes'
+migration_group: field_collection_to_paragraphs
+migration_tags:
+  - 'Drupal 8'
+  - 'Field Collections'
+  - 'Paragraphs'
+  - 'Parent'
+  - 'Node'
+source:
+ plugin: 'd8_field_collection:node'
+ constants:
+   revision_log: 'Updated by field_collections_to_paragraphs migration.'
+process:
+  nid: nid
+  vid: vid
+  revision_log: 'constants/revision_log'
+destination:
+ plugin: 'entity:node'
+migration_dependencies:
+  required:
+    - field_collection_to_paragraph_type
+    - field_collection_to_paragraph_field_storage
+    - field_collection_to_paragraph_field_instance
+    - field_collection_to_paragraph_field_entity_view
+    - field_collection_to_paragraph_field_entity_form_display
+    - field_collection_to_paragraph_parent_field_storage
+    - field_collection_to_paragraph_item
+    - field_collection_to_paragraph_parent_field_entity_view
+    - field_collection_to_paragraph_parent_field_entity_form_display
+dependencies:
+  module:
+    - field_collection
+    - paragraphs
+  enforced:
+    module:
+      - field_collection_to_paragraphs

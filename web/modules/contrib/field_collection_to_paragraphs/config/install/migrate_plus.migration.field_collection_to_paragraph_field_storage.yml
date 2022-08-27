@@ -1,0 +1,35 @@
+id: field_collection_to_paragraph_field_storage
+label: 'Field storage for Field Collection Paragraphs'
+migration_group: field_collection_to_paragraphs
+migration_tags:
+  - 'Drupal 8'
+  - 'Field Collections'
+  - 'Paragraphs'
+  - 'Field Storage'
+source:
+  plugin: d8_field_collection_field_storage
+  constants:
+    type: 'paragraph'
+process:
+  field_name: 'storage_data/field_name'
+  entity_type: 'constants/type'
+  type: 'storage_data/type'
+  locked: 'storage_data/locked'
+  cardinality: 'storage_data/cardinality'
+  translatable: 'storage_data/translatable'
+  settings: 'storage_data/settings'
+  module: 'storage_data/module'
+  persist_with_no_fields: 'storage_data/persist_with_no_fields'
+  custom_storage: 'storage_data/custom_storage'
+destination:
+  plugin: entity:field_storage_config
+migration_dependencies:
+  required:
+    - field_collection_to_paragraph_type
+dependencies:
+  module:
+    - field_collection
+    - paragraphs
+  enforced:
+    module:
+      - field_collection_to_paragraphs

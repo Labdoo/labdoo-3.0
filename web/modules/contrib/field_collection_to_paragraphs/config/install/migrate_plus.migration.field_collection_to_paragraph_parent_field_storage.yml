@@ -1,0 +1,41 @@
+id: field_collection_to_paragraph_parent_field_storage
+label: 'Field storage for Field Collection to Paragraphs parent entities'
+migration_group: field_collection_to_paragraphs
+migration_tags:
+  - 'Drupal 8'
+  - 'Field Collections'
+  - 'Paragraphs'
+  - 'Parent'
+  - 'Field Storage'
+source:
+  plugin: d8_field_collection_parent_field_storage
+  constants:
+    type: 'entity_reference_revisions'
+    settings:
+      target_type: paragraph
+process:
+  field_name:
+    plugin: field_collection_to_paragraphs_field_name
+    source: 'data/field_name'
+  type: 'constants/type'
+  settings: 'constants/settings'
+  entity_type: 'data/entity_type'
+  locked: 'data/locked'
+  cardinality: 'data/cardinality'
+  translatable: 'data/translatable'
+destination:
+  plugin: entity:field_storage_config
+migration_dependencies:
+  required:
+    - field_collection_to_paragraph_type
+    - field_collection_to_paragraph_field_storage
+    - field_collection_to_paragraph_field_instance
+    - field_collection_to_paragraph_field_entity_view
+    - field_collection_to_paragraph_field_entity_form_display
+dependencies:
+  module:
+    - field_collection
+    - paragraphs
+  enforced:
+    module:
+      - field_collection_to_paragraphs

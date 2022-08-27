@@ -1,0 +1,39 @@
+id: field_collection_to_paragraph_item
+label: 'Field Collection entities to equivalent Paragraphs entities'
+migration_group: field_collection_to_paragraphs
+migration_tags:
+  - 'Drupal 8'
+  - 'Field Collections'
+  - 'Paragraphs'
+  - 'Content'
+  - 'Field Collection items'
+class: Drupal\field_collection_to_paragraphs\Plugin\migrate\FieldCollectionItemMigration
+source:
+ plugin: d8_field_collection_item
+process:
+  field_collection_bundle:
+    plugin: migration_lookup
+    source: 'field_collection_bundle_lookup'
+    migration: field_collection_to_paragraph_type
+  type:
+    plugin: skip_on_empty
+    source: '@field_collection_bundle'
+    method: row
+destination:
+ plugin: 'entity_reference_revisions:paragraph'
+migration_dependencies:
+  required:
+    - field_collection_to_paragraph_type
+    - field_collection_to_paragraph_field_storage
+    - field_collection_to_paragraph_field_instance
+    - field_collection_to_paragraph_field_entity_view
+    - field_collection_to_paragraph_field_entity_form_display
+    - field_collection_to_paragraph_parent_field_storage
+    - field_collection_to_paragraph_parent_field_instance
+dependencies:
+  module:
+    - field_collection
+    - paragraphs
+  enforced:
+    module:
+      - field_collection_to_paragraphs

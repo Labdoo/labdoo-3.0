@@ -1,0 +1,11 @@
+services:
+  field_collection_to_paragraphs.entity_display_migration_subscriber:
+    class: Drupal\field_collection_to_paragraphs\EventSubscriber\EntityDisplayMigrationSubscriber
+    arguments: ['@entity_display.repository']
+    tags:
+      - { name: event_subscriber }
+  field_collection_to_paragraphs.entity_change_migration_subscriber:
+    class: Drupal\field_collection_to_paragraphs\EventSubscriber\EntityChangeMigrationSubscriber
+    arguments: ['@entity_type.manager']
+    tags:
+      - { name: event_subscriber }

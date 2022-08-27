@@ -1,0 +1,39 @@
+Field Collection to Paragraphs 2.x-dev, 202x-xx-xx
+--------------------------------------------------
+#3222593 by DamienMcKenna: Document how to run migration via update scripts;
+  added wrapper function to make it easier.
+
+
+Field Collection to Paragraphs 2.0.0-beta5, 2021-07-30
+------------------------------------------------------
+#3226022 by DamienMcKenna: Allow module to be used with Migrate Tools 5.0.
+
+
+Field Collection to Paragraphs 2.0.0-beta4, 2021-07-26
+------------------------------------------------------
+#3225268 by DamienMcKenna: Add composer support for the D9 merge requests.
+
+
+Field Collection to Paragraphs 2.0.0-beta3, 2021-07-25
+------------------------------------------------------
+#3223584 by DamienMcKenna: Improve the documentation.
+#3219720 by DamienMcKenna, codebymikey: Support Field Collection 8.x-1.x.
+#3223797 by DamienMcKenna, joestewart: Fix composer dependency problems.
+#3223830 by DamienMcKenna: Add minimal test coverage.
+#3224009 by DamienMcKenna: Added a docs note about migrate:status oddities.
+#3225263 by DamienMcKenna: Add a CHANGELOG.txt file.
+#3224009 by DamienMcKenna, ckng: Attach the paragraphs to the parent node not
+  working.
+
+
+Field Collection to Paragraphs 2.0.0-beta2, 2021-06-21
+------------------------------------------------------
+#3218423 by DamienMcKenna: Corrections to composer.json.
+#3218428 by DamienMcKenna: Improve comments in the included config yml file.
+#3219716 by DamienMcKenna: Require migrate_drupal in info.yml file.
+
+
+Field Collection to Paragraphs 2.0.0-beta1, 2021-05-13
+------------------------------------------------------
+By codebymikey: Initial functionality.
+#3213775 by DamienMcKenna: Correct composer.json file dependencies.

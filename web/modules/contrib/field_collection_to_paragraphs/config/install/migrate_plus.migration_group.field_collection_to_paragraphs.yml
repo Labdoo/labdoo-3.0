@@ -1,0 +1,43 @@
+id: field_collection_to_paragraphs
+label: 'Convert Drupal 8 Field Collections to Paragraphs.'
+description: 'Converts Field Collections to Paragraphs.'
+source_type: 'Drupal 8 Field Collections'
+
+# Default configuration settings to be shared amongst all migrations in the
+# group.
+shared_configuration:
+  source:
+    # The database connection to use, as defined in the settings.php file.
+    # Almost always should be left as "default".
+    key: default
+
+    # Field Collection types to migrate. Imports everything if empty.
+    field_collection_types: []
+
+    # The destination paragraph id must be less than 32 characters.
+    # If a mapping isn't specified, the module attempts to:
+    # 1. Generate one with a '_paragraph' suffix (trimmed to however characters
+    #    is allowed).
+    # 2. Use the field name without the 'field_' prefix if a suffix couldn't be
+    #    applied.
+    # Example:
+    # - field_collection1: paragraph_coll_1
+    # - field_collection2: paragraph_coll_2
+    field_collection_type_mapping: {  }
+
+    # Mapping for specific field names. Falls back to the type mapping if not
+    # specified.
+    field_collection_field_name_mapping: {  }
+
+    # Default suffix to apply if no mapping is available.
+    field_collection_field_name_suffix: _paragraph
+
+  destination:
+    # Attempt to track changes to entity status(es) e.g. with
+    # workbench_moderation.
+    field_collection_track_status_change: FALSE
+
+dependencies:
+  enforced:
+    module:
+      - field_collection_to_paragraphs

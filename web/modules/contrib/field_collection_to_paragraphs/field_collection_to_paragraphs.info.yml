@@ -1,0 +1,16 @@
+name: Field Collection To Paragraphs migration
+description: 'Migrates Field Collection items to Paragraphs'
+core_version_requirement: ^8 || ^9
+package: Migration
+type: module
+dependencies:
+  - drupal:migrate_drupal
+  - field_collection:field_collection
+  - migrate_plus:migrate_plus
+  - migrate_tools:migrate_tools
+  - paragraphs:paragraphs
+
+# Information added by Drupal.org packaging script on 2022-07-29
+version: '2.x-dev'
+project: 'field_collection_to_paragraphs'
+datestamp: 1659113739

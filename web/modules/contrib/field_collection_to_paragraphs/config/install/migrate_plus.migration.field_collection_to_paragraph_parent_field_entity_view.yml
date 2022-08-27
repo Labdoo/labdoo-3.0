@@ -1,0 +1,51 @@
+id: field_collection_to_paragraph_parent_field_entity_view
+label: 'Field display modes for Field Collection to Paragraphs parent entities'
+migration_group: field_collection_to_paragraphs
+migration_tags:
+  - 'Drupal 8'
+  - 'Field Collections'
+  - 'Paragraphs'
+  - 'Parent'
+  - 'Field entity view'
+source:
+  plugin: d8_field_collection_parent_field_entity_display
+  ignore_map: TRUE # Don't map due to complex query.
+  constants:
+    field_formatter: entity_reference_revisions_entity_view
+    formatter_settings:
+      view_mode: default
+      link: ''
+process:
+  entity_type: 'data/targetEntityType'
+  bundle: 'data/bundle'
+  view_mode: 'data/mode'
+  field_name:
+    plugin: field_collection_to_paragraphs_field_name
+    source: 'field_name'
+  options: 'field_options'
+  'options/type': 'constants/field_formatter'
+  'options/settings': 'constants/formatter_settings'
+  'options/settings/view_mode':
+    plugin: default_value
+    source: 'field_options/settings/view_mode'
+    default_value: 'default'
+  hidden: 'hidden'
+destination:
+  plugin: component_entity_display
+migration_dependencies:
+  required:
+    - field_collection_to_paragraph_type
+    - field_collection_to_paragraph_field_storage
+    - field_collection_to_paragraph_field_instance
+    - field_collection_to_paragraph_field_entity_view
+    - field_collection_to_paragraph_field_entity_form_display
+    - field_collection_to_paragraph_parent_field_storage
+    - field_collection_to_paragraph_parent_field_instance
+    - field_collection_to_paragraph_item
+dependencies:
+  module:
+    - field_collection
+    - paragraphs
+  enforced:
+    module:
+      - field_collection_to_paragraphs
