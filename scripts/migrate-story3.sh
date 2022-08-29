@@ -1,0 +1,8 @@
+#Rollback and migrate specific items
+ddev drush mr upgrade_d7_node_complete_labdoo_story
+ddev drush mr upgrade_d7_field_collection_type
+ddev drush mr upgrade_d7_field_collection_story_section
+
+ddev drush mim upgrade_d7_field_collection_type
+ddev drush mim upgrade_d7_field_collection_story_section
+ddev drush mim upgrade_d7_node_complete_labdoo_story
