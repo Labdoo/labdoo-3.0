@@ -4,6 +4,12 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.user.compact
+    - field.field.user.user.field_about_me
+    - field.field.user.user.field_hub_manager_notifications
+    - field.field.user.user.field_notification_area
+    - field.field.user.user.field_skills
+    - field.field.user.user.field_user_name
+    - field.field.user.user.og_user_node
     - field.field.user.user.user_picture
     - image.style.thumbnail
   module:
@@ -22,8 +28,16 @@ content:
     settings:
       image_link: content
       image_style: thumbnail
+      image_loading:
+        attribute: lazy
     third_party_settings: {  }
     weight: 0
     region: content
 hidden:
+  field_about_me: true
+  field_hub_manager_notifications: true
+  field_notification_area: true
+  field_skills: true
+  field_user_name: true
   member_for: true
+  og_user_node: true

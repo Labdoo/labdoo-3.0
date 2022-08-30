@@ -5,6 +5,14 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.hub.body
+    - field.field.node.hub.comment_node_hub
+    - field.field.node.hub.field_branches_information
+    - field.field.node.hub.field_hub_additional_editors
+    - field.field.node.hub.field_hub_manager_s_
+    - field.field.node.hub.field_hub_photo_album
+    - field.field.node.hub.field_hub_status
+    - field.field.node.hub.field_parent_hub
+    - field.field.node.hub.field_types_of_mini_missions
     - node.type.hub
   module:
     - text
@@ -27,4 +35,12 @@ content:
     third_party_settings: {  }
     weight: 100
     region: content
-hidden: {  }
+hidden:
+  comment_node_hub: true
+  field_branches_information: true
+  field_hub_additional_editors: true
+  field_hub_manager_s_: true
+  field_hub_photo_album: true
+  field_hub_status: true
+  field_parent_hub: true
+  field_types_of_mini_missions: true

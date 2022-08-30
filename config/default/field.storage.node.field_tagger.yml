@@ -1,0 +1,20 @@
+uuid: 2a005f59-bb26-4c75-be8c-68fb046a1d63
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - user
+id: node.field_tagger
+field_name: field_tagger
+entity_type: node
+type: entity_reference
+settings:
+  target_type: user
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,201 @@
+uuid: 7adb531c-211d-4f4b-aa54-6f6f1270f4f1
+langcode: en
+status: true
+dependencies: {  }
+id: upgrade_d7_node_complete_laptop
+class: Drupal\node\Plugin\migrate\D7NodeTranslation
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags:
+  - 'Drupal 7'
+  - Content
+migration_group: migrate_drupal_7
+label: 'Node complete (Dootronic)'
+source:
+  plugin: d7_node_complete
+  node_type: laptop
+process:
+  nid:
+    -
+      plugin: get
+      source: tnid
+  vid:
+    -
+      plugin: get
+      source: vid
+  langcode:
+    -
+      plugin: default_value
+      source: language
+      default_value: und
+  title:
+    -
+      plugin: get
+      source: title
+  uid:
+    -
+      plugin: get
+      source: node_uid
+  status:
+    -
+      plugin: get
+      source: status
+  created:
+    -
+      plugin: get
+      source: created
+  changed:
+    -
+      plugin: get
+      source: timestamp
+  promote:
+    -
+      plugin: get
+      source: promote
+  sticky:
+    -
+      plugin: get
+      source: sticky
+  revision_uid:
+    -
+      plugin: get
+      source: revision_uid
+  revision_log:
+    -
+      plugin: get
+      source: log
+  revision_timestamp:
+    -
+      plugin: get
+      source: timestamp
+  content_translation_source:
+    -
+      plugin: get
+      source: source_langcode
+  comment_node_laptop/0/status:
+    -
+      plugin: get
+      source: comment
+  field_additional_editors:
+    -
+      plugin: get
+      source: field_additional_editors
+  field_additional_followers:
+    -
+      plugin: get
+      source: field_additional_followers
+  field_additional_notes:
+    -
+      plugin: get
+      source: field_additional_notes
+  field_additional_notification_em:
+    -
+      plugin: sub_process
+      source: field_additional_notification_em
+      process:
+        value: email
+  field_amp_hours:
+    -
+      plugin: get
+      source: field_amp_hours
+  field_battery_duration:
+    -
+      plugin: get
+      source: field_battery_duration
+  field_battery_watt_hours:
+    -
+      plugin: get
+      source: field_battery_watt_hours
+  field_cpu:
+    -
+      plugin: get
+      source: field_cpu
+  field_cpu_type:
+    -
+      plugin: get
+      source: field_cpu_type
+  field_current_operating_system:
+    -
+      plugin: get
+      source: field_current_operating_system
+  field_device_type:
+    -
+      plugin: get
+      source: field_device_type
+  field_dooject_weight:
+    -
+      plugin: get
+      source: field_dooject_weight
+  field_dootrips:
+    -
+      plugin: get
+      source: field_dootrips
+  field_edoovillage_destination:
+    -
+      plugin: get
+      source: field_edoovillage_destination
+  field_hard_drive:
+    -
+      plugin: get
+      source: field_hard_drive
+  field_hub_laptop:
+    -
+      plugin: get
+      source: field_hub_laptop
+  field_keyboard:
+    -
+      plugin: get
+      source: field_keyboard
+  field_manager:
+    -
+      plugin: get
+      source: field_manager
+  field_memory:
+    -
+      plugin: get
+      source: field_memory
+  field_model:
+    -
+      plugin: get
+      source: field_model
+  field_pick_me_up:
+    -
+      plugin: get
+      source: field_pick_me_up
+  field_picture:
+    -
+      plugin: sub_process
+      source: field_picture
+      process:
+        target_id: fid
+        alt: alt
+        title: title
+        width: width
+        height: height
+  field_serial_number:
+    -
+      plugin: get
+      source: field_serial_number
+  field_status:
+    -
+      plugin: get
+      source: field_status
+  field_tagger:
+    -
+      plugin: get
+      source: field_tagger
+  field_volts:
+    -
+      plugin: get
+      source: field_volts
+destination:
+  plugin: 'entity_complete:node'
+  translations: true
+  default_bundle: laptop
+migration_dependencies:
+  required:
+    - upgrade_d7_user
+    - upgrade_d7_node_type
+  optional:
+    - upgrade_d7_field_instance
+    - upgrade_d7_comment_field_instance

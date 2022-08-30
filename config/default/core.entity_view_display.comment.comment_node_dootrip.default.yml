@@ -1,0 +1,27 @@
+uuid: 0d5e7f57-cb1d-40f8-b459-4ba0eaa0582a
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.comment_node_dootrip
+    - field.field.comment.comment_node_dootrip.comment_body
+  module:
+    - text
+id: comment.comment_node_dootrip.default
+targetEntityType: comment
+bundle: comment_node_dootrip
+mode: default
+content:
+  comment_body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

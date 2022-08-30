@@ -1,0 +1,20 @@
+uuid: f7ac848b-648b-4d1e-9328-fcb1d23b75a2
+langcode: en
+status: true
+dependencies:
+  module:
+    - comment
+    - node
+id: node.comment_node_labdoo_slide
+field_name: comment_node_labdoo_slide
+entity_type: node
+type: comment
+settings:
+  comment_type: comment_node_labdoo_slide
+module: comment
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

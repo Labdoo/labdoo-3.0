@@ -1,0 +1,20 @@
+uuid: 13dd9e37-29d7-464b-b680-67f1a5b5913b
+langcode: en
+status: true
+dependencies:
+  module:
+    - comment
+    - node
+id: node.comment_node_superhub_page
+field_name: comment_node_superhub_page
+entity_type: node
+type: comment
+settings:
+  comment_type: comment_node_superhub_page
+module: comment
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

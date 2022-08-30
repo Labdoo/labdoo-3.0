@@ -1,0 +1,19 @@
+uuid: 6b828cf5-6108-408a-b054-f3dc9bb62d46
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_gic_date
+    - node.type.gic
+id: node.gic.field_gic_date
+field_name: field_gic_date
+entity_type: node
+bundle: gic
+label: Date
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

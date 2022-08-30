@@ -1,0 +1,23 @@
+uuid: 870a040a-7ece-498a-b48f-e02f9512a9e4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_amp_hours
+    - node.type.laptop
+id: node.laptop.field_amp_hours
+field_name: field_amp_hours
+entity_type: node
+bundle: laptop
+label: 'Amp hours'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

@@ -1,0 +1,8 @@
+uuid: 3f71627d-ed13-4e1c-8426-d67b7f381629
+langcode: en
+status: true
+dependencies: {  }
+id: comment_node_event
+label: 'Team Event comment'
+target_entity_type_id: node
+description: null

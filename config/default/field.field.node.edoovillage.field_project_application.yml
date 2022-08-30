@@ -1,0 +1,27 @@
+uuid: 6bbcfcf1-76b5-4eab-9b57-686c302af70b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_project_application
+    - node.type.edoovillage
+  module:
+    - file
+id: node.edoovillage.field_project_application
+field_name: field_project_application
+entity_type: node
+bundle: edoovillage
+label: 'Project application'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: txt
+  max_filesize: ''
+  description_field: false
+field_type: file

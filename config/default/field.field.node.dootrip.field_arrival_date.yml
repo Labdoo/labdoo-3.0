@@ -1,0 +1,21 @@
+uuid: ab07635a-0ab3-43b9-87c3-935c116fa4c6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_arrival_date
+    - node.type.dootrip
+  module:
+    - datetime
+id: node.dootrip.field_arrival_date
+field_name: field_arrival_date
+entity_type: node
+bundle: dootrip
+label: 'Arrival date'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

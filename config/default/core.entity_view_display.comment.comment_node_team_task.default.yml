@@ -1,0 +1,29 @@
+uuid: 469be163-146c-4520-b2f8-b16416dadf70
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.comment_node_team_task
+    - field.field.comment.comment_node_team_task.comment_body
+    - field.field.comment.comment_node_team_task.field_task_comment_attach
+  module:
+    - text
+id: comment.comment_node_team_task.default
+targetEntityType: comment
+bundle: comment_node_team_task
+mode: default
+content:
+  comment_body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_task_comment_attach: true

@@ -1,0 +1,16 @@
+uuid: 2d31c28d-44a7-49c0-9ea0-5dcb0caaf70f
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    parent: 'main-menu:0:'
+name: Share
+type: drupal_wall
+description: ''
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

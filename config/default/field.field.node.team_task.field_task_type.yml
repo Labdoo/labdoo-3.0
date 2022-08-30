@@ -1,0 +1,21 @@
+uuid: 1eb011d3-1d4d-44b2-bbc6-4e03f8648bdb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_task_type
+    - node.type.team_task
+  module:
+    - options
+id: node.team_task.field_task_type
+field_name: field_task_type
+entity_type: node
+bundle: team_task
+label: Type
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,21 @@
+uuid: 2d5b136d-ceda-484b-bdd7-151306206b77
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_additional_editors_shub
+    - node.type.superhub_page
+id: node.superhub_page.field_additional_editors_shub
+field_name: field_additional_editors_shub
+entity_type: node
+bundle: superhub_page
+label: 'Additional editors'
+description: 'Add users who need to have permission to edit this page.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings: {  }
+field_type: entity_reference

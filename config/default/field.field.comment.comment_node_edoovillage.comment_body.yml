@@ -1,0 +1,21 @@
+uuid: 85ac86c3-2355-43e0-97bb-8ebb33712f89
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.comment_node_edoovillage
+    - field.storage.comment.comment_body
+  module:
+    - text
+id: comment.comment_node_edoovillage.comment_body
+field_name: comment_body
+entity_type: comment
+bundle: comment_node_edoovillage
+label: Comment
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,23 @@
+uuid: c40e258d-96c1-4db1-b3fa-9755ef57b1ab
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.og_roles_permissions
+    - node.type.team
+id: node.team.og_roles_permissions
+field_name: og_roles_permissions
+entity_type: node
+bundle: team
+label: 'Group roles and permissions'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

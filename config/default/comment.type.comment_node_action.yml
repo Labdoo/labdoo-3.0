@@ -1,0 +1,8 @@
+uuid: db800302-38b1-4954-bb9c-05ec90748627
+langcode: en
+status: true
+dependencies: {  }
+id: comment_node_action
+label: 'Action comment'
+target_entity_type_id: node
+description: null

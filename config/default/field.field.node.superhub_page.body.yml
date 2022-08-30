@@ -1,0 +1,23 @@
+uuid: 6f9558f2-3328-4a57-8f2f-710acb260a2a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.superhub_page
+  module:
+    - text
+id: node.superhub_page.body
+field_name: body
+entity_type: node
+bundle: superhub_page
+label: Body
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+field_type: text_with_summary

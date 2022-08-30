@@ -1,0 +1,21 @@
+uuid: 2b8dc384-c34a-4b3d-bce1-d51c3d037f4c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_additional_editors
+    - node.type.laptop
+id: node.laptop.field_additional_editors
+field_name: field_additional_editors
+entity_type: node
+bundle: laptop
+label: 'Additional editors'
+description: 'Add users who need to have permission to edit this dootronic'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings: {  }
+field_type: entity_reference

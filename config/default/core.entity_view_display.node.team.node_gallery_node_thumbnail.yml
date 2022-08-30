@@ -1,0 +1,30 @@
+uuid: a91b89ff-af36-4e0f-988d-f85a990a8fc5
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.node_gallery_node_thumbnail
+    - field.field.node.team.body
+    - field.field.node.team.comment_node_team
+    - field.field.node.team.field_welcome_message
+    - field.field.node.team.group_group
+    - field.field.node.team.og_roles_permissions
+    - node.type.team
+  module:
+    - user
+id: node.team.node_gallery_node_thumbnail
+targetEntityType: node
+bundle: team
+mode: node_gallery_node_thumbnail
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  body: true
+  comment_node_team: true
+  field_welcome_message: true
+  group_group: true
+  og_roles_permissions: true

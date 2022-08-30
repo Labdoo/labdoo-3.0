@@ -1,0 +1,36 @@
+uuid: 61d077d3-0766-4d22-b981-0065db65cb0b
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.node_gallery_node_thumbnail
+    - field.field.node.event.body
+    - field.field.node.event.comment_node_event
+    - field.field.node.event.field_additional_emails_event
+    - field.field.node.event.field_image_event
+    - field.field.node.event.field_location_event
+    - field.field.node.event.field_send_to_all_event
+    - field.field.node.event.field_send_to_event
+    - field.field.node.event.og_group_ref
+    - node.type.event
+  module:
+    - user
+id: node.event.node_gallery_node_thumbnail
+targetEntityType: node
+bundle: event
+mode: node_gallery_node_thumbnail
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  body: true
+  comment_node_event: true
+  field_additional_emails_event: true
+  field_image_event: true
+  field_location_event: true
+  field_send_to_all_event: true
+  field_send_to_event: true
+  og_group_ref: true

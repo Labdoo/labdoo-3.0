@@ -1,0 +1,8 @@
+uuid: 4638f4ad-30b0-4466-8cb0-3fb5fedef97a
+langcode: en
+status: true
+dependencies: {  }
+id: comment_node_laptop
+label: 'Dootronic comment'
+target_entity_type_id: node
+description: null

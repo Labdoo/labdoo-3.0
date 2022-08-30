@@ -1,0 +1,12 @@
+uuid: 7f4d2464-41cc-453c-8dee-fe003cecf57b
+langcode: en
+status: true
+dependencies: {  }
+id: send_e_mail_to_admin_when_a_new_user_is_registered
+label: 'Send e-mail to admin when a new user is registered'
+type: system
+plugin: action_send_email_action
+configuration:
+  recipient: dev-user@labdoo.org
+  subject: '[lbd] New user: [user:name]'
+  message: 'New user: [user:name]'

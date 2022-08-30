@@ -1,0 +1,34 @@
+uuid: ec270c44-6883-4f96-beac-0edd6cfb657c
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.simplenews.body
+    - field.field.node.simplenews.comment_node_simplenews
+    - field.field.node.simplenews.field_simplenews_term
+    - node.type.simplenews
+  module:
+    - text
+    - user
+id: node.simplenews.teaser
+targetEntityType: node
+bundle: simplenews
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  comment_node_simplenews: true
+  field_simplenews_term: true

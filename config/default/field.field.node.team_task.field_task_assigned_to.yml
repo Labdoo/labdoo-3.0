@@ -1,0 +1,21 @@
+uuid: 1853211c-4270-4139-9a7b-b4049993e36d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_task_assigned_to
+    - node.type.team_task
+id: node.team_task.field_task_assigned_to
+field_name: field_task_assigned_to
+entity_type: node
+bundle: team_task
+label: 'Assigned to'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings: {  }
+field_type: entity_reference

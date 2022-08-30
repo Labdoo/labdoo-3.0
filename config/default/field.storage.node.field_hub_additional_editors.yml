@@ -1,0 +1,20 @@
+uuid: cae7ce7e-9f06-4511-917c-2719f69c0fdb
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - user
+id: node.field_hub_additional_editors
+field_name: field_hub_additional_editors
+entity_type: node
+type: entity_reference
+settings:
+  target_type: user
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

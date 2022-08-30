@@ -1,0 +1,21 @@
+uuid: a8e0f255-556e-4b85-841a-80265a9c4078
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.comment_node_labdoo_story
+    - field.storage.comment.comment_body
+  module:
+    - text
+id: comment.comment_node_labdoo_story.comment_body
+field_name: comment_body
+entity_type: comment
+bundle: comment_node_labdoo_story
+label: Comment
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

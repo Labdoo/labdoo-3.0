@@ -1,0 +1,21 @@
+uuid: 720489be-e70a-4cef-8951-16aee4c7acde
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_grant_edit_rights_wiki
+    - node.type.book
+id: node.book.field_grant_edit_rights_wiki
+field_name: field_grant_edit_rights_wiki
+entity_type: node
+bundle: book
+label: 'Grant edit rights'
+description: 'Add users who need to have permission to edit this wiki page and all the wiki pages that are children to this page.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings: {  }
+field_type: entity_reference

@@ -1,0 +1,21 @@
+uuid: 89a5b848-60d2-4b43-9825-09097f88a306
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_preferred_edoovillages
+    - node.type.dootrip
+id: node.dootrip.field_preferred_edoovillages
+field_name: field_preferred_edoovillages
+entity_type: node
+bundle: dootrip
+label: 'Preferred edoovillage destinations'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings: {  }
+field_type: entity_reference

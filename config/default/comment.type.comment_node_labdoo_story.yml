@@ -1,0 +1,8 @@
+uuid: de5cb6dd-5cf6-410a-8dd2-e7c0d261bb43
+langcode: en
+status: true
+dependencies: {  }
+id: comment_node_labdoo_story
+label: 'Labdoo Story comment'
+target_entity_type_id: node
+description: null

@@ -1,0 +1,23 @@
+uuid: d97e110b-30a6-4298-a620-049c344abf61
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_slider_weight
+    - node.type.slider_page
+id: node.slider_page.field_slider_weight
+field_name: field_slider_weight
+entity_type: node
+bundle: slider_page
+label: Weight
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

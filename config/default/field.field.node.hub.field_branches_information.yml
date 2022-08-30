@@ -1,0 +1,21 @@
+uuid: d08f981c-fe4c-4ca3-836b-f024058b2282
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_branches_information
+    - node.type.hub
+  module:
+    - text
+id: node.hub.field_branches_information
+field_name: field_branches_information
+entity_type: node
+bundle: hub
+label: 'About this hub'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

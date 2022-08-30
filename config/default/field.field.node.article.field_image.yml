@@ -14,9 +14,9 @@ field_name: field_image
 entity_type: node
 bundle: article
 label: Image
-description: ''
+description: 'Upload an image to go with this article.'
 required: false
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:

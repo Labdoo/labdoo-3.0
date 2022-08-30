@@ -1,0 +1,21 @@
+uuid: afd2d584-bd51-4614-80f7-f70f49334879
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_dootripper_s_
+    - node.type.dootrip
+id: node.dootrip.field_dootripper_s_
+field_name: field_dootripper_s_
+entity_type: node
+bundle: dootrip
+label: Dootripper(s)
+description: 'User(s) who will be part of this dootrip'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings: {  }
+field_type: entity_reference

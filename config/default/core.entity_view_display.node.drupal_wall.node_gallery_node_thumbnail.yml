@@ -1,0 +1,30 @@
+uuid: c4b84311-0017-4471-86a8-7987e132bd47
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.node_gallery_node_thumbnail
+    - field.field.node.drupal_wall.body
+    - field.field.node.drupal_wall.comment_node_drupal_wall
+    - field.field.node.drupal_wall.field_drupal_wall_image_style
+    - field.field.node.drupal_wall.field_drupal_wall_photos
+    - field.field.node.drupal_wall.field_drupal_wall_videos
+    - node.type.drupal_wall
+  module:
+    - user
+id: node.drupal_wall.node_gallery_node_thumbnail
+targetEntityType: node
+bundle: drupal_wall
+mode: node_gallery_node_thumbnail
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  body: true
+  comment_node_drupal_wall: true
+  field_drupal_wall_image_style: true
+  field_drupal_wall_photos: true
+  field_drupal_wall_videos: true

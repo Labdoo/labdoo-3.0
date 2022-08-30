@@ -1,0 +1,27 @@
+uuid: eacdf51a-1ce8-43d9-9e15-3af9b37f4f8a
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.comment_node_drupal_wall
+    - field.field.comment.comment_node_drupal_wall.comment_body
+  module:
+    - text
+id: comment.comment_node_drupal_wall.default
+targetEntityType: comment
+bundle: comment_node_drupal_wall
+mode: default
+content:
+  comment_body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

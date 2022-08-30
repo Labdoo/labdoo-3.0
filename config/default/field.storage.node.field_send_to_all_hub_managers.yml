@@ -1,0 +1,18 @@
+uuid: 5116332d-25af-4233-b3b8-a7a498cf537e
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_send_to_all_hub_managers
+field_name: field_send_to_all_hub_managers
+entity_type: node
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

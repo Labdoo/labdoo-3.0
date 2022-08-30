@@ -1,0 +1,21 @@
+uuid: e29faddf-b6e9-4324-8d10-3cf57d471b8e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_linked_pages
+    - node.type.superhub_page
+id: node.superhub_page.field_linked_pages
+field_name: field_linked_pages
+entity_type: node
+bundle: superhub_page
+label: 'Linked pages'
+description: 'Select the superhub pages where you would like this menu block to appear'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings: {  }
+field_type: entity_reference

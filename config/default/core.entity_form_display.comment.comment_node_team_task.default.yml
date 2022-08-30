@@ -1,0 +1,45 @@
+uuid: e46c8260-24a2-4532-ba2b-a8dd0d2d58eb
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.comment_node_team_task
+    - field.field.comment.comment_node_team_task.comment_body
+    - field.field.comment.comment_node_team_task.field_task_comment_attach
+  module:
+    - file
+    - text
+id: comment.comment_node_team_task.default
+targetEntityType: comment
+bundle: comment_node_team_task
+mode: default
+content:
+  author:
+    weight: -2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  comment_body:
+    type: text_textarea
+    weight: 2
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_task_comment_attach:
+    type: file_generic
+    weight: 4
+    region: content
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+  subject:
+    type: string_textfield
+    weight: 10
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

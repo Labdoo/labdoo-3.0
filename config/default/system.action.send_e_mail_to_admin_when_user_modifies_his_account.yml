@@ -1,0 +1,12 @@
+uuid: feac36be-7a40-48e3-babe-213bb0d82139
+langcode: en
+status: true
+dependencies: {  }
+id: send_e_mail_to_admin_when_user_modifies_his_account
+label: 'Send e-mail to admin when user modifies his account'
+type: system
+plugin: action_send_email_action
+configuration:
+  recipient: dev-user@labdoo.org
+  subject: '[lbd] [user:name] has modified his account'
+  message: 'The user [user:name] has modified his account.'

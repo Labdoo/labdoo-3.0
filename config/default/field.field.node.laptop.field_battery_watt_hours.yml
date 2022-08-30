@@ -1,0 +1,23 @@
+uuid: c99ec16d-b204-4aa3-991f-f605a383a5ab
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_battery_watt_hours
+    - node.type.laptop
+  module:
+    - computed_field
+id: node.laptop.field_battery_watt_hours
+field_name: field_battery_watt_hours
+entity_type: node
+bundle: laptop
+label: 'Battery Watt Hours'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  prefix: ''
+  suffix: ''
+field_type: computed_integer

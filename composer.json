@@ -9,7 +9,7 @@
         "chat": "https://www.drupal.org/node/314178"
     },
     "repositories": [
-        {
+	    {
             "type": "composer",
             "url": "https://packages.drupal.org/8"
         }
@@ -27,6 +27,7 @@
         "drupal/country": "^1.0",
         "drupal/devel": "^4.1",
         "drupal/entity_reference_revisions": "^1.9",
+        "drupal/field_collection": "dev-4.0.x",
         "drupal/field_group": "^3.2",
         "drupal/flexslider": "^2.0",
         "drupal/geocoder": "^3.26",
@@ -36,6 +37,7 @@
         "drupal/gin": "^3.0@alpha",
         "drupal/gin_toolbar": "^1.0@beta",
         "drupal/location_migration": "^1.0@beta",
+        "drupal/migrate_devel": "^2.0@alpha",
         "drupal/migrate_plus": "^6.0",
         "drupal/migrate_tools": "^6.0",
         "drupal/migrate_upgrade": "^4.0",

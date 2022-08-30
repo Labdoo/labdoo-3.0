@@ -1,0 +1,23 @@
+uuid: 84cc6f18-ab69-4434-9032-7fcc1d1a61bd
+langcode: und
+status: true
+dependencies:
+  module:
+    - comment
+    - file
+id: comment.field_task_comment_attach
+field_name: field_task_comment_attach
+entity_type: comment
+type: file
+settings:
+  target_type: file
+  display_field: false
+  display_default: false
+  uri_scheme: public
+module: file
+locked: false
+cardinality: 5
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

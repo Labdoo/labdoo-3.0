@@ -1,0 +1,19 @@
+uuid: 4316e153-8a6c-4be2-803a-02ab687069d9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_drupal_wall_image_style
+    - node.type.drupal_wall
+id: node.drupal_wall.field_drupal_wall_image_style
+field_name: field_drupal_wall_image_style
+entity_type: node
+bundle: drupal_wall
+label: 'Image Style'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

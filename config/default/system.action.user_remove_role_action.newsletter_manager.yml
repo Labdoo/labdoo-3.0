@@ -1,0 +1,14 @@
+uuid: 16bce239-65f9-488b-bd13-f9b00b1d8832
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.newsletter_manager
+  module:
+    - user
+id: user_remove_role_action.newsletter_manager
+label: 'Remove the newsletter manager role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: newsletter_manager

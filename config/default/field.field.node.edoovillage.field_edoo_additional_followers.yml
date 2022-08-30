@@ -1,0 +1,21 @@
+uuid: e62c9a17-99aa-43b8-aa7b-9855f4bc1514
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_edoo_additional_followers
+    - node.type.edoovillage
+id: node.edoovillage.field_edoo_additional_followers
+field_name: field_edoo_additional_followers
+entity_type: node
+bundle: edoovillage
+label: 'Additional followers'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings: {  }
+field_type: entity_reference

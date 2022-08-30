@@ -1,0 +1,18 @@
+uuid: a49a1b48-ce06-4405-af66-1674bf7cd443
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_dootrip_additional_emails
+field_name: field_dootrip_additional_emails
+entity_type: node
+type: email
+settings: {  }
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

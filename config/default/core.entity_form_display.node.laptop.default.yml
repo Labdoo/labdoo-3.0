@@ -1,0 +1,359 @@
+uuid: ef023310-e85f-4c83-a569-574fcf63693d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.laptop.comment_node_laptop
+    - field.field.node.laptop.field_additional_editors
+    - field.field.node.laptop.field_additional_followers
+    - field.field.node.laptop.field_additional_notes
+    - field.field.node.laptop.field_additional_notification_em
+    - field.field.node.laptop.field_amp_hours
+    - field.field.node.laptop.field_battery_duration
+    - field.field.node.laptop.field_battery_watt_hours
+    - field.field.node.laptop.field_cpu
+    - field.field.node.laptop.field_cpu_type
+    - field.field.node.laptop.field_current_operating_system
+    - field.field.node.laptop.field_device_type
+    - field.field.node.laptop.field_dooject_weight
+    - field.field.node.laptop.field_dootrips
+    - field.field.node.laptop.field_edoovillage_destination
+    - field.field.node.laptop.field_hard_drive
+    - field.field.node.laptop.field_hub_laptop
+    - field.field.node.laptop.field_manager
+    - field.field.node.laptop.field_memory
+    - field.field.node.laptop.field_model
+    - field.field.node.laptop.field_pick_me_up
+    - field.field.node.laptop.field_picture
+    - field.field.node.laptop.field_serial_number
+    - field.field.node.laptop.field_status
+    - field.field.node.laptop.field_tagger
+    - field.field.node.laptop.field_volts
+    - image.style.thumbnail
+    - node.type.laptop
+  module:
+    - comment
+    - computed_field
+    - field_group
+    - image
+    - path
+third_party_settings:
+  field_group:
+    group_additional_information:
+      children:
+        - field_additional_editors
+        - field_additional_followers
+        - field_additional_notes
+        - field_additional_notification_em
+        - field_amp_hours
+        - field_battery_duration
+        - field_battery_watt_hours
+        - field_cpu
+        - field_cpu_type
+        - field_current_operating_system
+        - field_dooject_weight
+        - field_dootrips
+        - field_hard_drive
+        - field_keyboard
+        - field_memory
+        - field_pick_me_up
+        - field_volts
+        - field_laptop
+      label: 'Additional Information'
+      region: content
+      parent_name: ''
+      weight: 2
+      format_type: tab
+      format_settings:
+        label: 'Additional Information'
+        classes: 'group-additional-information field-group-htab'
+        id: ''
+        formatter: open
+        description: ''
+        required_fields: true
+    group_basic_information:
+      children:
+        - field_device_type
+        - field_edoovillage_destination
+        - field_hub_laptop
+        - field_manager
+        - field_model
+        - field_picture
+        - field_serial_number
+        - field_status
+        - locations
+        - path
+      label: 'Basic Information'
+      region: content
+      parent_name: ''
+      weight: 1
+      format_type: tabs
+      format_settings:
+        label: 'Basic Information'
+        classes: 'group-basic-information field-group-htab'
+        id: ''
+        formatter: open
+        description: ''
+        required_fields: true
+        direction: horizontal
+id: node.laptop.default
+targetEntityType: node
+bundle: laptop
+mode: default
+content:
+  comment_node_laptop:
+    type: comment_default
+    weight: 20
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  created:
+    type: datetime_timestamp
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_additional_editors:
+    type: entity_reference_autocomplete
+    weight: 19
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_additional_followers:
+    type: entity_reference_autocomplete
+    weight: 20
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_additional_notes:
+    type: string_textarea
+    weight: 22
+    region: content
+    settings:
+      rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+  field_additional_notification_em:
+    type: email_default
+    weight: 21
+    region: content
+    settings:
+      placeholder: ''
+      size: 60
+    third_party_settings: {  }
+  field_amp_hours:
+    type: number
+    weight: 16
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_battery_duration:
+    type: number
+    weight: 11
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_battery_watt_hours:
+    type: computed_number_widget
+    weight: 121
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_cpu:
+    type: number
+    weight: 7
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_cpu_type:
+    type: options_select
+    weight: 8
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_current_operating_system:
+    type: string_textfield
+    weight: 13
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_device_type:
+    type: options_select
+    weight: 9
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_dooject_weight:
+    type: number
+    weight: 14
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_dootrips:
+    type: entity_reference_autocomplete
+    weight: 18
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_edoovillage_destination:
+    type: entity_reference_autocomplete
+    weight: 6
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_hard_drive:
+    type: number
+    weight: 10
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_hub_laptop:
+    type: entity_reference_autocomplete
+    weight: 7
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_manager:
+    type: entity_reference_autocomplete
+    weight: 10
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_memory:
+    type: number
+    weight: 9
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_model:
+    type: string_textfield
+    weight: 4
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_pick_me_up:
+    type: boolean_checkbox
+    weight: 23
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_picture:
+    type: image_image
+    weight: 8
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_serial_number:
+    type: string_textfield
+    weight: 5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_status:
+    type: options_select
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_tagger:
+    type: entity_reference_autocomplete
+    weight: 6
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_volts:
+    type: number
+    weight: 15
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    weight: 15
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 120
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    weight: 16
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 5
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

@@ -4,8 +4,10 @@ status: true
 dependencies:
   config:
     - field.field.node.page.body
+    - field.field.node.page.comment_node_page
     - node.type.page
   module:
+    - comment
     - path
     - text
 _core:
@@ -24,6 +26,12 @@ content:
       summary_rows: 3
       placeholder: ''
       show_summary: false
+    third_party_settings: {  }
+  comment_node_page:
+    type: comment_default
+    weight: 20
+    region: content
+    settings: {  }
     third_party_settings: {  }
   created:
     type: datetime_timestamp

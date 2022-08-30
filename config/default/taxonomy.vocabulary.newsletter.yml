@@ -1,0 +1,8 @@
+uuid: 2a7b71d3-19fa-4196-989e-e9d511ad73dc
+langcode: en
+status: true
+dependencies: {  }
+name: Newsletter
+vid: newsletter
+description: 'Simplenews newsletter categories.'
+weight: 0

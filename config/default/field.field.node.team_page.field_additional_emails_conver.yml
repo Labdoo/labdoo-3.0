@@ -1,0 +1,19 @@
+uuid: 5331bf45-898b-4f46-9c33-2759d2477144
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_additional_emails_conver
+    - node.type.team_page
+id: node.team_page.field_additional_emails_conver
+field_name: field_additional_emails_conver
+entity_type: node
+bundle: team_page
+label: 'Share with additional email addresses'
+description: 'Enter a comma-separated list of correct email addresses.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

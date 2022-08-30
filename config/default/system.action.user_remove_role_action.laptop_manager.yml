@@ -1,0 +1,14 @@
+uuid: d2c72868-f0f2-4214-959d-60fac1dc1f02
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.laptop_manager
+  module:
+    - user
+id: user_remove_role_action.laptop_manager
+label: 'Remove the laptop manager role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: laptop_manager

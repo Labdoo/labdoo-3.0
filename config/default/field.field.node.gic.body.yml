@@ -1,0 +1,23 @@
+uuid: 90a782c4-76c9-40ca-89c7-a7fe3ab2a7f2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.gic
+  module:
+    - text
+id: node.gic.body
+field_name: body
+entity_type: node
+bundle: gic
+label: Body
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+field_type: text_with_summary

@@ -1,0 +1,8 @@
+uuid: 7a948530-163a-4e53-a100-96156664c4df
+langcode: en
+status: true
+dependencies: {  }
+id: comment_node_gic
+label: 'GIC comment'
+target_entity_type_id: node
+description: null

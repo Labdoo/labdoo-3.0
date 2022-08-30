@@ -1,0 +1,18 @@
+uuid: 13136dc2-b68b-43b9-829c-89e2274d6cf3
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main-menu
+    parent: 'main-menu:0:'
+name: 'Labdoo Story'
+type: labdoo_story
+description: 'Through this content type, schools can write their own stories and share them with the world.'
+help: "<img src='/profiles/labdoo/files/pictures/equation-2-alpha-small.png' width='60'>\r\nHere is a quick explanation of how to create your own story. For a more detailed description on how Labdoo Stories work, please refer to <a target=\"_blank\" href=../../content/labdoo-stories>this page</a>.\r\n\r\n<ul>\r\n<li>\r\nUnder the field 'Title', type the title of your story.\r\n</li>\r\n<li>\r\nStories are written by creating 'Story sections'. Each story section has three items: the heading of the section, the actual story text, and a picture. This allows you to build your own stories by combining multiple sections, each one with their own heading, text and picture. If you don't want to have multiple headings for your story, you can optionally omit typing a heading in one or more sections.\r\n</li>\r\n<li>\r\nAdd more sections to your story by clicking on the button \"Add another item\" below the last section.\r\n</li>\r\n<li>\r\nWhen you are done, click on \"Save\".\r\n</li>\r\n</ul>\r\nFor an example of Labdoo Story, you can <a href=\"../../content/drops-goodwill\" target=\"_blank\">take a look at this page</a>."
+new_revision: true
+preview_mode: 1
+display_submitted: false

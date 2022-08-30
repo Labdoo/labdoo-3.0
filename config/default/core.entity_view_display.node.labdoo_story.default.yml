@@ -1,0 +1,42 @@
+uuid: b2c84f77-d048-4c54-ab46-20cb2b9b3855
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_display.comment.comment_node_labdoo_story.default
+    - field.field.node.labdoo_story.comment_node_labdoo_story
+    - field.field.node.labdoo_story.field_story_edoovillage
+    - field.field.node.labdoo_story.field_story_section
+    - node.type.labdoo_story
+  module:
+    - comment
+    - user
+id: node.labdoo_story.default
+targetEntityType: node
+bundle: labdoo_story
+mode: default
+content:
+  comment_node_labdoo_story:
+    type: comment_default
+    label: hidden
+    settings:
+      view_mode: default
+      pager_id: 0
+    third_party_settings: {  }
+    weight: 20
+    region: content
+  field_story_edoovillage:
+    type: entity_reference_label
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_story_section: true

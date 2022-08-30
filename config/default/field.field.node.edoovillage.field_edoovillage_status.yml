@@ -1,0 +1,21 @@
+uuid: 96a991a0-4707-4033-b4e0-c4c302482760
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_edoovillage_status
+    - node.type.edoovillage
+  module:
+    - options
+id: node.edoovillage.field_edoovillage_status
+field_name: field_edoovillage_status
+entity_type: node
+bundle: edoovillage
+label: Status
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

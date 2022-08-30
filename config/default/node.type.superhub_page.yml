@@ -1,0 +1,18 @@
+uuid: 209b9374-0171-41a6-b71f-fe064ecc4043
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main-menu
+    parent: 'main-menu:0:'
+name: 'Superhub Page'
+type: superhub_page
+description: 'Super hubs can create their own specific content pages using this type.'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

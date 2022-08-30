@@ -1,0 +1,10 @@
+uuid: 490bab04-bee7-4a91-b3f6-f6cb1f4776e3
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.joinprofile_field
+label: joinprofile_field
+targetEntityType: node
+cache: true
