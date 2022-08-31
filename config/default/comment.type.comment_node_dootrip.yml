@@ -1,8 +1,0 @@
-uuid: 23a5fe76-3561-4cab-87ec-dcfc93ce3344
-langcode: en
-status: true
-dependencies: {  }
-id: comment_node_dootrip
-label: 'Dootrip comment'
-target_entity_type_id: node
-description: null

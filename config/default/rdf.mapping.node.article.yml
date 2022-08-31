@@ -12,51 +12,41 @@ id: node.article
 targetEntityType: node
 bundle: article
 types:
-  - 'sioc:Item'
-  - 'foaf:Document'
+  - 'schema:Article'
 fieldMappings:
-  field_image:
-    properties:
-      - 'og:image'
-      - 'rdfs:seeAlso'
-    mapping_type: rel
-  field_tags:
-    properties:
-      - 'dc:subject'
-    mapping_type: rel
   title:
     properties:
-      - 'dc:title'
+      - 'schema:name'
   created:
     properties:
-      - 'dc:date'
-      - 'dc:created'
-    datatype: 'xsd:dateTime'
+      - 'schema:dateCreated'
     datatype_callback:
       callable: 'Drupal\rdf\CommonDataConverter::dateIso8601Value'
   changed:
     properties:
-      - 'dc:modified'
-    datatype: 'xsd:dateTime'
+      - 'schema:dateModified'
     datatype_callback:
       callable: 'Drupal\rdf\CommonDataConverter::dateIso8601Value'
   body:
     properties:
-      - 'content:encoded'
+      - 'schema:text'
   uid:
     properties:
-      - 'sioc:has_creator'
-    mapping_type: rel
-  name:
+      - 'schema:author'
+  comment:
     properties:
-      - 'foaf:name'
+      - 'schema:comment'
+    mapping_type: rel
   comment_count:
     properties:
-      - 'sioc:num_replies'
-    datatype: 'xsd:integer'
-  last_activity:
-    properties:
-      - 'sioc:last_activity_date'
-    datatype: 'xsd:dateTime'
+      - 'schema:interactionCount'
     datatype_callback:
-      callable: 'Drupal\rdf\CommonDataConverter::dateIso8601Value'
+      callable: 'Drupal\rdf\SchemaOrgDataConverter::interactionCount'
+      arguments:
+        interaction_type: UserComments
+  field_image:
+    properties:
+      - 'schema:image'
+  field_tags:
+    properties:
+      - 'schema:about'

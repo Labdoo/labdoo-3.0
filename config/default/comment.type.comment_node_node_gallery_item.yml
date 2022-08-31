@@ -1,8 +1,0 @@
-uuid: 40862949-e014-4584-b3b0-6d0f722f2605
-langcode: en
-status: true
-dependencies: {  }
-id: comment_node_node_gallery_item
-label: 'Gallery Item comment'
-target_entity_type_id: node
-description: null

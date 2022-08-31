@@ -1,8 +1,0 @@
-uuid: 5fab8d97-6ac1-4a95-a2b9-56505abd1cec
-langcode: en
-status: true
-dependencies: {  }
-id: comment_node_edoovillage
-label: 'Edoovillage comment'
-target_entity_type_id: node
-description: null

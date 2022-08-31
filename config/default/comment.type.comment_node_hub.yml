@@ -1,8 +1,0 @@
-uuid: bf0cb1d0-b90c-41c5-bbfa-3e15f0890da2
-langcode: en
-status: true
-dependencies: {  }
-id: comment_node_hub
-label: 'Hub comment'
-target_entity_type_id: node
-description: null

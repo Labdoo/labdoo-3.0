@@ -3,20 +3,9 @@ langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_display.comment.comment_node_hub.default
     - field.field.node.hub.body
-    - field.field.node.hub.comment_node_hub
-    - field.field.node.hub.field_branches_information
-    - field.field.node.hub.field_hub_additional_editors
-    - field.field.node.hub.field_hub_manager_s_
-    - field.field.node.hub.field_hub_photo_album
-    - field.field.node.hub.field_hub_status
-    - field.field.node.hub.field_parent_hub
-    - field.field.node.hub.field_types_of_mini_missions
     - node.type.hub
   module:
-    - comment
-    - options
     - text
     - user
 id: node.hub.default
@@ -31,58 +20,9 @@ content:
     third_party_settings: {  }
     weight: 101
     region: content
-  comment_node_hub:
-    type: comment_default
-    label: hidden
-    settings:
-      view_mode: default
-      pager_id: 0
-    third_party_settings: {  }
-    weight: 20
-    region: content
-  field_branches_information:
-    type: text_default
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    weight: 5
-    region: content
-  field_hub_manager_s_:
-    type: entity_reference_label
-    label: inline
-    settings:
-      link: true
-    third_party_settings: {  }
-    weight: 1
-    region: content
-  field_hub_photo_album:
-    type: entity_reference_label
-    label: inline
-    settings:
-      link: true
-    third_party_settings: {  }
-    weight: 2
-    region: content
-  field_hub_status:
-    type: list_default
-    label: inline
-    settings: {  }
-    third_party_settings: {  }
-    weight: 0
-    region: content
-  field_parent_hub:
-    type: entity_reference_label
-    label: inline
-    settings:
-      link: true
-    third_party_settings: {  }
-    weight: 2
-    region: content
   links:
     settings: {  }
     third_party_settings: {  }
     weight: 100
     region: content
-hidden:
-  field_hub_additional_editors: true
-  field_types_of_mini_missions: true
+hidden: {  }

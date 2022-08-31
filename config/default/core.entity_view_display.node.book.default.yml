@@ -1,19 +1,11 @@
-uuid: 0f1e6089-4075-465c-a99e-5d163b2b1b92
+uuid: 1e00e93f-b1a9-4efe-ad92-3b1630fe7a28
 langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_display.comment.comment_node_book.default
     - field.field.node.book.body
-    - field.field.node.book.comment_node_book
-    - field.field.node.book.field_book_language
-    - field.field.node.book.field_grant_edit_rights_wiki
-    - field.field.node.book.field_is_first_page
-    - field.field.node.book.field_reference_book
-    - field.field.node.book.field_wiki_tags
     - node.type.book
   module:
-    - comment
     - text
     - user
 _core:
@@ -28,30 +20,9 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 0
-    region: content
-  comment_node_book:
-    type: comment_default
-    label: hidden
-    settings:
-      view_mode: default
-      pager_id: 0
-    third_party_settings: {  }
-    weight: 20
-    region: content
-  field_wiki_tags:
-    type: entity_reference_label
-    label: inline
-    settings:
-      link: true
-    third_party_settings: {  }
-    weight: 1
+    weight: 100
     region: content
   links:
     weight: 101
     region: content
-hidden:
-  field_book_language: true
-  field_grant_edit_rights_wiki: true
-  field_is_first_page: true
-  field_reference_book: true
+hidden: {  }

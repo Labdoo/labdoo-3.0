@@ -3,62 +3,22 @@ langcode: en
 status: true
 dependencies:
   config:
-    - filter.format.filtered_html
-    - node.type.dootrip
-    - node.type.drupal_wall
-    - node.type.laptop
+    - filter.format.basic_html
   module:
-    - book
-    - comment
     - contact
     - filter
-    - node
+    - media
     - search
     - system
 _core:
   default_config_hash: I44QAB4es39lNzMQWiJLq2dfjX7VRSOzT_5KzAcUq_M
 id: authenticated
-label: 'authenticated user'
+label: 'Authenticated user'
 weight: 1
 is_admin: false
 permissions:
-  - 'access comments'
   - 'access content'
-  - 'access global drupal wall content'
-  - 'access printer-friendly version'
-  - 'access user contact forms'
-  - 'access user profiles'
-  - 'cancel account'
-  - 'clone own nodes'
-  - 'create dootrip content'
-  - 'create drupal_wall content'
-  - 'create event_registration registration'
-  - 'create event_registration registration self'
-  - 'create laptop content'
-  - 'delete own dootrip content'
-  - 'delete own drupal_wall content'
-  - 'delete own event_registration registration'
-  - 'delete own laptop content'
-  - 'edit own dootrip content'
-  - 'edit own drupal_wall content'
-  - 'edit own laptop content'
-  - 'flag labdoo_like_flag'
-  - 'post comments'
-  - 'search book content'
+  - 'access site-wide contact form'
   - 'search content'
-  - 'search page content'
-  - 'search simplenews content'
-  - 'set own user location'
-  - 'skip comment approval'
-  - 'submit latitude/longitude'
-  - 'subscribe to newsletters'
-  - 'unflag labdoo_like_flag'
-  - 'update own event_registration registration'
-  - 'use advanced search'
-  - 'use text format filtered_html'
-  - 'view all user locations'
-  - 'view any private_page content'
-  - 'view files'
-  - 'view own event_registration registration'
-  - 'view own user location'
-  - 'view revisions'
+  - 'use text format basic_html'
+  - 'view media'

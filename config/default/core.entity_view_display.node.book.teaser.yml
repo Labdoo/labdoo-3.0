@@ -1,16 +1,10 @@
-uuid: 27ae76ec-64d5-4d4c-b3b1-269910b4dda1
+uuid: 3fa547d1-ca81-4977-a978-8af6f8743ab8
 langcode: en
 status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.book.body
-    - field.field.node.book.comment_node_book
-    - field.field.node.book.field_book_language
-    - field.field.node.book.field_grant_edit_rights_wiki
-    - field.field.node.book.field_is_first_page
-    - field.field.node.book.field_reference_book
-    - field.field.node.book.field_wiki_tags
     - node.type.book
   module:
     - text
@@ -28,15 +22,9 @@ content:
     settings:
       trim_length: 600
     third_party_settings: {  }
-    weight: 0
+    weight: 100
     region: content
   links:
     weight: 101
     region: content
-hidden:
-  comment_node_book: true
-  field_book_language: true
-  field_grant_edit_rights_wiki: true
-  field_is_first_page: true
-  field_reference_book: true
-  field_wiki_tags: true
+hidden: {  }

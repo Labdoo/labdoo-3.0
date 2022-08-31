@@ -3,33 +3,22 @@ langcode: en
 status: true
 dependencies:
   config:
-    - filter.format.filtered_html
+    - filter.format.restricted_html
   module:
-    - book
-    - comment
+    - contact
     - filter
+    - media
     - search
     - system
 _core:
   default_config_hash: 6WavjUYXIegP9AAg2zXGx54MWIVoomC3SZhNiqe-Dyk
 id: anonymous
-label: 'anonymous user'
+label: 'Anonymous user'
 weight: 0
 is_admin: false
 permissions:
-  - 'access comments'
   - 'access content'
-  - 'access global drupal wall content'
-  - 'access printer-friendly version'
-  - 'create event_registration registration self'
-  - 'delete own event_registration registration'
-  - 'search book content'
+  - 'access site-wide contact form'
   - 'search content'
-  - 'search page content'
-  - 'search simplenews content'
-  - 'subscribe to newsletters'
-  - 'update own event_registration registration'
-  - 'use advanced search'
-  - 'use text format filtered_html'
-  - 'view files'
-  - 'view own event_registration registration'
+  - 'use text format restricted_html'
+  - 'view media'

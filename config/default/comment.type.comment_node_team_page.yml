@@ -1,8 +1,0 @@
-uuid: 76d242e0-7352-48dd-81c6-62a688274b3e
-langcode: en
-status: true
-dependencies: {  }
-id: comment_node_team_page
-label: 'Team Conversation comment'
-target_entity_type_id: node
-description: null
