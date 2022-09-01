@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "caad6a8689f4a1f7237fb192fed6d6a7",
+    "content-hash": "7561c603984b8a8734b8f8278e250437",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -4102,6 +4102,74 @@
             "homepage": "https://www.drupal.org/project/redirect",
             "support": {
                 "source": "https://git.drupalcode.org/project/redirect"
+            }
+        },
+        {
+            "name": "drupal/registration",
+            "version": "3.0.0-alpha3",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/registration.git",
+                "reference": "3.0.0-alpha3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/registration-3.0.0-alpha3.zip",
+                "reference": "3.0.0-alpha3",
+                "shasum": "c19045b2e07f7898050adbf583d1852bc44b3a14"
+            },
+            "require": {
+                "drupal/core": "^9.3"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "3.0.0-alpha3",
+                    "datestamp": "1661040189",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Alpha releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "gcb",
+                    "homepage": "https://www.drupal.org/user/1682976"
+                },
+                {
+                    "name": "john.oltman",
+                    "homepage": "https://www.drupal.org/user/699926"
+                },
+                {
+                    "name": "komejo",
+                    "homepage": "https://www.drupal.org/user/2848941"
+                },
+                {
+                    "name": "levelos",
+                    "homepage": "https://www.drupal.org/user/54135"
+                },
+                {
+                    "name": "mariacha1",
+                    "homepage": "https://www.drupal.org/user/2210776"
+                },
+                {
+                    "name": "tauno",
+                    "homepage": "https://www.drupal.org/user/105595"
+                },
+                {
+                    "name": "wxactly",
+                    "homepage": "https://www.drupal.org/user/3181097"
+                }
+            ],
+            "description": "Provides user registration for events.",
+            "homepage": "https://www.drupal.org/project/registration",
+            "support": {
+                "source": "https://git.drupalcode.org/project/registration"
             }
         },
         {
@@ -10077,7 +10145,8 @@
         "drupal/gin_toolbar": 10,
         "drupal/group": 10,
         "drupal/location_migration": 10,
-        "drupal/migrate_devel": 15
+        "drupal/migrate_devel": 15,
+        "drupal/registration": 15
     },
     "prefer-stable": true,
     "prefer-lowest": false,

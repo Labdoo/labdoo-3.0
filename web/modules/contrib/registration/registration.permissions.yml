@@ -1,0 +1,11 @@
+administer registration types:
+  title: 'Administer registration types'
+  description: 'Manage registration types, fields and display settings.'
+  restrict access: true
+administer registration:
+  title: 'Administer registrations'
+  description: 'View, edit, delete and manage all registrations, regardless of type.'
+  restrict access: true
+
+permission_callbacks:
+  - \Drupal\registration\RegistrationPermissionProvider::buildPermissions

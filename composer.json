@@ -45,6 +45,7 @@
         "drupal/migration_tools": "^2.4",
         "drupal/paragraphs": "^1.14",
         "drupal/redirect": "^1.7",
+        "drupal/registration": "^3.0@alpha",
         "drupal/views_migration": "^1.1",
         "drush/drush": "^11.0",
         "geocoder-php/google-maps-provider": "^4.6"
