@@ -47,7 +47,7 @@
         "drupal/redirect": "^1.7",
         "drupal/registration": "^3.0@alpha",
         "drupal/views_migration": "^1.1",
-        "drush/drush": "^11.0",
+        "drush/drush": "^11.1",
         "geocoder-php/google-maps-provider": "^4.6"
     },
     "conflict": {
