@@ -1,0 +1,10 @@
+uuid: ec5e3f7b-dc66-4cd5-81df-42306132850e
+langcode: en
+status: true
+dependencies: {  }
+id: story_section
+label: 'Story section'
+icon_uuid: null
+icon_default: null
+description: 'Migrated from field_collection field_story_section'
+behavior_plugins: {  }

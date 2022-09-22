@@ -1,0 +1,27 @@
+uuid: 74005e00-b238-48c7-b315-f03f7c557c89
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_task_attachment
+    - node.type.team_task
+  module:
+    - file
+id: node.team_task.field_task_attachment
+field_name: field_task_attachment
+entity_type: node
+bundle: team_task
+label: Attachment
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: txt
+  max_filesize: ''
+  description_field: false
+field_type: file

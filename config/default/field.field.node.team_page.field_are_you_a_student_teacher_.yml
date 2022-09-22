@@ -1,0 +1,23 @@
+uuid: d63764bd-ea06-4ea1-9822-c49db99a81ab
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_are_you_a_student_teacher_
+    - node.type.team_page
+id: node.team_page.field_are_you_a_student_teacher_
+field_name: field_are_you_a_student_teacher_
+entity_type: node
+bundle: team_page
+label: 'I am a student, a teacher or a staff member from an edoovillage'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

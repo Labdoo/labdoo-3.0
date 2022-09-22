@@ -1,0 +1,14 @@
+uuid: 9683b990-d7b2-4529-9b4e-a42100498cd4
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.hub_manager
+  module:
+    - user
+id: user_add_role_action.hub_manager
+label: 'Add the hub manager role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: hub_manager

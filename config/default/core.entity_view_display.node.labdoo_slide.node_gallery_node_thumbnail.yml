@@ -1,0 +1,28 @@
+uuid: 36e0b586-3048-4213-ae1b-87c4014cfdda
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.node_gallery_node_thumbnail
+    - field.field.node.labdoo_slide.body
+    - field.field.node.labdoo_slide.comment_node_labdoo_slide
+    - field.field.node.labdoo_slide.field_image
+    - field.field.node.labdoo_slide.field_slide_link
+    - node.type.labdoo_slide
+  module:
+    - user
+id: node.labdoo_slide.node_gallery_node_thumbnail
+targetEntityType: node
+bundle: labdoo_slide
+mode: node_gallery_node_thumbnail
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  body: true
+  comment_node_labdoo_slide: true
+  field_image: true
+  field_slide_link: true

@@ -1,0 +1,191 @@
+uuid: 89afc8e9-fc45-4c1d-97e5-280835898933
+langcode: en
+status: true
+dependencies: {  }
+id: upgrade_d7_node_complete_edoovillage
+class: Drupal\node\Plugin\migrate\D7NodeTranslation
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags:
+  - 'Drupal 7'
+  - Content
+migration_group: migrate_drupal_7
+label: 'Node complete (Edoovillage)'
+source:
+  plugin: d7_node_complete
+  node_type: edoovillage
+process:
+  nid:
+    -
+      plugin: get
+      source: tnid
+  vid:
+    -
+      plugin: get
+      source: vid
+  langcode:
+    -
+      plugin: default_value
+      source: language
+      default_value: und
+  title:
+    -
+      plugin: get
+      source: title
+  uid:
+    -
+      plugin: get
+      source: node_uid
+  status:
+    -
+      plugin: get
+      source: status
+  created:
+    -
+      plugin: get
+      source: created
+  changed:
+    -
+      plugin: get
+      source: timestamp
+  promote:
+    -
+      plugin: get
+      source: promote
+  sticky:
+    -
+      plugin: get
+      source: sticky
+  revision_uid:
+    -
+      plugin: get
+      source: revision_uid
+  revision_log:
+    -
+      plugin: get
+      source: log
+  revision_timestamp:
+    -
+      plugin: get
+      source: timestamp
+  content_translation_source:
+    -
+      plugin: get
+      source: source_langcode
+  comment_node_edoovillage/0/status:
+    -
+      plugin: get
+      source: comment
+  field_edoovillage_photo_album:
+    -
+      plugin: get
+      source: field_edoovillage_photo_album
+  field_additional_files:
+    -
+      plugin: sub_process
+      source: field_additional_files
+      process:
+        target_id: fid
+        display: display
+        description: description
+  field_additional_info_language:
+    -
+      plugin: get
+      source: field_additional_info_language
+  field_doojects_additional_notes:
+    -
+      plugin: get
+      source: field_doojects_additional_notes
+  field_edoo_additional_editors:
+    -
+      plugin: get
+      source: field_edoo_additional_editors
+  field_edoo_additional_followers:
+    -
+      plugin: get
+      source: field_edoo_additional_followers
+  field_edoo_additional_notif_em:
+    -
+      plugin: sub_process
+      source: field_edoo_additional_notif_em
+      process:
+        value: email
+  field_edoovillage_status:
+    -
+      plugin: get
+      source: field_edoovillage_status
+  field_hub:
+    -
+      plugin: get
+      source: field_hub
+  field_internet_additional_notes:
+    -
+      plugin: get
+      source: field_internet_additional_notes
+  field_internet_connection_type:
+    -
+      plugin: get
+      source: field_internet_connection_type
+  field_local_language_s_:
+    -
+      plugin: get
+      source: field_local_language_s_
+  field_number_of_laptops_needed:
+    -
+      plugin: get
+      source: field_number_of_laptops_needed
+  field_number_of_students:
+    -
+      plugin: get
+      source: field_number_of_students
+  field_number_of_teachers:
+    -
+      plugin: get
+      source: field_number_of_teachers
+  field_on_site_point_of_contact:
+    -
+      plugin: get
+      source: field_on_site_point_of_contact
+  field_project_application:
+    -
+      plugin: sub_process
+      source: field_project_application
+      process:
+        target_id: fid
+        display: display
+        description: description
+  field_project_description:
+    -
+      plugin: get
+      source: field_project_description
+  field_project_manager_s_:
+    -
+      plugin: get
+      source: field_project_manager_s_
+  field_project_summary:
+    -
+      plugin: get
+      source: field_project_summary
+  field_semaphore:
+    -
+      plugin: get
+      source: field_semaphore
+  field_socket_type:
+    -
+      plugin: get
+      source: field_socket_type
+  field_socket_voltage:
+    -
+      plugin: get
+      source: field_socket_voltage
+destination:
+  plugin: 'entity_complete:node'
+  translations: true
+  default_bundle: edoovillage
+migration_dependencies:
+  required:
+    - upgrade_d7_user
+    - upgrade_d7_node_type
+  optional:
+    - upgrade_d7_field_instance
+    - upgrade_d7_comment_field_instance

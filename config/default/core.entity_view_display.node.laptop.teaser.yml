@@ -1,0 +1,70 @@
+uuid: 27eb838d-0ad1-4676-bf23-e4cf31c2f489
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.laptop.comment_node_laptop
+    - field.field.node.laptop.field_additional_editors
+    - field.field.node.laptop.field_additional_followers
+    - field.field.node.laptop.field_additional_notes
+    - field.field.node.laptop.field_additional_notification_em
+    - field.field.node.laptop.field_amp_hours
+    - field.field.node.laptop.field_battery_duration
+    - field.field.node.laptop.field_cpu
+    - field.field.node.laptop.field_cpu_type
+    - field.field.node.laptop.field_current_operating_system
+    - field.field.node.laptop.field_device_type
+    - field.field.node.laptop.field_dooject_weight
+    - field.field.node.laptop.field_dootrips
+    - field.field.node.laptop.field_edoovillage_destination
+    - field.field.node.laptop.field_hard_drive
+    - field.field.node.laptop.field_hub_laptop
+    - field.field.node.laptop.field_manager
+    - field.field.node.laptop.field_memory
+    - field.field.node.laptop.field_model
+    - field.field.node.laptop.field_pick_me_up
+    - field.field.node.laptop.field_picture
+    - field.field.node.laptop.field_serial_number
+    - field.field.node.laptop.field_status
+    - field.field.node.laptop.field_tagger
+    - field.field.node.laptop.field_volts
+    - node.type.laptop
+  module:
+    - user
+id: node.laptop.teaser
+targetEntityType: node
+bundle: laptop
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  comment_node_laptop: true
+  field_additional_editors: true
+  field_additional_followers: true
+  field_additional_notes: true
+  field_additional_notification_em: true
+  field_amp_hours: true
+  field_battery_duration: true
+  field_cpu: true
+  field_cpu_type: true
+  field_current_operating_system: true
+  field_device_type: true
+  field_dooject_weight: true
+  field_dootrips: true
+  field_edoovillage_destination: true
+  field_hard_drive: true
+  field_hub_laptop: true
+  field_manager: true
+  field_memory: true
+  field_model: true
+  field_pick_me_up: true
+  field_picture: true
+  field_serial_number: true
+  field_status: true
+  field_tagger: true
+  field_volts: true

@@ -1,0 +1,21 @@
+uuid: 1336c5be-7937-4393-8484-bf2d1dcddb79
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.og_group_ref
+    - node.type.team_task
+id: node.team_task.og_group_ref
+field_name: og_group_ref
+entity_type: node
+bundle: team_task
+label: Team(s)
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings: {  }
+field_type: entity_reference

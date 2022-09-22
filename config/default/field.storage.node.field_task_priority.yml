@@ -1,0 +1,30 @@
+uuid: 49672d66-56da-4cc5-8073-8efd974f47b6
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_task_priority
+field_name: field_task_priority
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: low
+      label: Low
+    -
+      value: normal
+      label: Normal
+    -
+      value: high
+      label: High
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

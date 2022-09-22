@@ -1,0 +1,24 @@
+uuid: 7a3ee90f-059b-44bf-b4fd-7467a5d08054
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.node_gallery_node_thumbnail
+    - field.field.node.private_page.body
+    - field.field.node.private_page.comment_node_private_page
+    - node.type.private_page
+  module:
+    - user
+id: node.private_page.node_gallery_node_thumbnail
+targetEntityType: node
+bundle: private_page
+mode: node_gallery_node_thumbnail
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  body: true
+  comment_node_private_page: true

@@ -1,0 +1,58 @@
+uuid: 6befcbda-cedd-4e8d-8c0a-f8c56290bd51
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.dootrip.comment_node_dootrip
+    - field.field.node.dootrip.field_additional_traveler_s_info
+    - field.field.node.dootrip.field_announce_this_dootrip
+    - field.field.node.dootrip.field_arrival_date
+    - field.field.node.dootrip.field_comments
+    - field.field.node.dootrip.field_departure_date
+    - field.field.node.dootrip.field_destination_of_the_trip
+    - field.field.node.dootrip.field_dootrip_additional_editors
+    - field.field.node.dootrip.field_dootrip_additional_emails
+    - field.field.node.dootrip.field_dootrip_capacity
+    - field.field.node.dootrip.field_dootrip_hub
+    - field.field.node.dootrip.field_dootrip_notes
+    - field.field.node.dootrip.field_dootripper_s_
+    - field.field.node.dootrip.field_laptops
+    - field.field.node.dootrip.field_number_of_days_after
+    - field.field.node.dootrip.field_number_of_days_before
+    - field.field.node.dootrip.field_origin_of_the_trip
+    - field.field.node.dootrip.field_preferred_edoovillages
+    - field.field.node.dootrip.field_status_dootrip
+    - node.type.dootrip
+  module:
+    - user
+id: node.dootrip.teaser
+targetEntityType: node
+bundle: dootrip
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  comment_node_dootrip: true
+  field_additional_traveler_s_info: true
+  field_announce_this_dootrip: true
+  field_arrival_date: true
+  field_comments: true
+  field_departure_date: true
+  field_destination_of_the_trip: true
+  field_dootrip_additional_editors: true
+  field_dootrip_additional_emails: true
+  field_dootrip_capacity: true
+  field_dootrip_hub: true
+  field_dootrip_notes: true
+  field_dootripper_s_: true
+  field_laptops: true
+  field_number_of_days_after: true
+  field_number_of_days_before: true
+  field_origin_of_the_trip: true
+  field_preferred_edoovillages: true
+  field_status_dootrip: true

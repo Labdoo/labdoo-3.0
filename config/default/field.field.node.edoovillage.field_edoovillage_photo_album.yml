@@ -1,0 +1,21 @@
+uuid: b5ee81f6-b488-4a72-8bb6-eea9d7c38db3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_edoovillage_photo_album
+    - node.type.edoovillage
+id: node.edoovillage.field_edoovillage_photo_album
+field_name: field_edoovillage_photo_album
+entity_type: node
+bundle: edoovillage
+label: 'Photo album'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings: {  }
+field_type: entity_reference

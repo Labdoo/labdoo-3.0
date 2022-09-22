@@ -1,0 +1,21 @@
+uuid: 97ee44bd-6aeb-497c-856e-3c8c293bb8ec
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_type
+    - node.type.slider_page
+  module:
+    - options
+id: node.slider_page.field_type
+field_name: field_type
+entity_type: node
+bundle: slider_page
+label: Type
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

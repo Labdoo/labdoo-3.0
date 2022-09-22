@@ -1,0 +1,27 @@
+uuid: 7267bf78-3703-4f45-8e93-7d6822ebc8bf
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.comment_node_drupal_wall
+    - field.field.comment.comment_node_drupal_wall.comment_body
+  module:
+    - text
+id: comment.comment_node_drupal_wall.default
+targetEntityType: comment
+bundle: comment_node_drupal_wall
+mode: default
+content:
+  comment_body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

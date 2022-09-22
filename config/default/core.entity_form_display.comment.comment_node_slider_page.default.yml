@@ -1,0 +1,29 @@
+uuid: 155fd7c1-9780-4816-989e-2f2a378657ff
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.comment_node_slider_page
+    - field.field.comment.comment_node_slider_page.comment_body
+  module:
+    - text
+id: comment.comment_node_slider_page.default
+targetEntityType: comment
+bundle: comment_node_slider_page
+mode: default
+content:
+  author:
+    weight: -2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  comment_body:
+    type: text_textarea
+    weight: 0
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  subject: true

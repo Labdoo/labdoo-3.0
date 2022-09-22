@@ -1,0 +1,38 @@
+uuid: be1609cf-60d5-4393-8fc8-662beaf906df
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.slider_page.body
+    - field.field.node.slider_page.comment_node_slider_page
+    - field.field.node.slider_page.field_slider_tab
+    - field.field.node.slider_page.field_slider_weight
+    - field.field.node.slider_page.field_type
+    - node.type.slider_page
+  module:
+    - text
+    - user
+id: node.slider_page.teaser
+targetEntityType: node
+bundle: slider_page
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  comment_node_slider_page: true
+  field_slider_tab: true
+  field_slider_weight: true
+  field_type: true

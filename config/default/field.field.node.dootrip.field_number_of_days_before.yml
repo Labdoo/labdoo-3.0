@@ -1,0 +1,23 @@
+uuid: 075ade89-58e8-404d-a868-8386505a24a1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_number_of_days_before
+    - node.type.dootrip
+id: node.dootrip.field_number_of_days_before
+field_name: field_number_of_days_before
+entity_type: node
+bundle: dootrip
+label: 'Number of days you can store the dootronic(s) before the departure date'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

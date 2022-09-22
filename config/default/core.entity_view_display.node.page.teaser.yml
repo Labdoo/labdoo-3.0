@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.page.body
+    - field.field.node.page.comment_node_page
     - node.type.page
   module:
     - text
@@ -22,9 +23,10 @@ content:
     settings:
       trim_length: 600
     third_party_settings: {  }
-    weight: 100
+    weight: 0
     region: content
   links:
     weight: 101
     region: content
-hidden: {  }
+hidden:
+  comment_node_page: true

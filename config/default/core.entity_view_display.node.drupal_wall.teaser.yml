@@ -1,0 +1,38 @@
+uuid: 48d05bb9-baad-460b-9a1e-436ef9d136e7
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.drupal_wall.body
+    - field.field.node.drupal_wall.comment_node_drupal_wall
+    - field.field.node.drupal_wall.field_drupal_wall_image_style
+    - field.field.node.drupal_wall.field_drupal_wall_photos
+    - field.field.node.drupal_wall.field_drupal_wall_videos
+    - node.type.drupal_wall
+  module:
+    - text
+    - user
+id: node.drupal_wall.teaser
+targetEntityType: node
+bundle: drupal_wall
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  comment_node_drupal_wall: true
+  field_drupal_wall_image_style: true
+  field_drupal_wall_photos: true
+  field_drupal_wall_videos: true

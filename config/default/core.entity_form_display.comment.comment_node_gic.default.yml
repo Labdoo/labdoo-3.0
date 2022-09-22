@@ -1,0 +1,29 @@
+uuid: 4c66eabd-5eff-4280-9436-3ca958bd8892
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.comment_node_gic
+    - field.field.comment.comment_node_gic.comment_body
+  module:
+    - text
+id: comment.comment_node_gic.default
+targetEntityType: comment
+bundle: comment_node_gic
+mode: default
+content:
+  author:
+    weight: -2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  comment_body:
+    type: text_textarea
+    weight: 0
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  subject: true

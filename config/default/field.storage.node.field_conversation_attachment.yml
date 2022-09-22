@@ -1,0 +1,23 @@
+uuid: 41377875-5e2e-4c36-b641-b5e1c51caa7e
+langcode: und
+status: true
+dependencies:
+  module:
+    - file
+    - node
+id: node.field_conversation_attachment
+field_name: field_conversation_attachment
+entity_type: node
+type: file
+settings:
+  target_type: file
+  display_field: false
+  display_default: false
+  uri_scheme: public
+module: file
+locked: false
+cardinality: 10
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

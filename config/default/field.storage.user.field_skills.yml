@@ -1,0 +1,21 @@
+uuid: 7002aab7-e37a-434c-9dcb-88a3211bfda6
+langcode: und
+status: true
+dependencies:
+  module:
+    - user
+id: user.field_skills
+field_name: field_skills
+entity_type: user
+type: string
+settings:
+  max_length: 255
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

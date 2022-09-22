@@ -1,0 +1,21 @@
+uuid: 64272a70-0c96-4db7-9581-5de29d60e594
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_hub_photo_album
+    - node.type.hub
+id: node.hub.field_hub_photo_album
+field_name: field_hub_photo_album
+entity_type: node
+bundle: hub
+label: 'Photo album'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings: {  }
+field_type: entity_reference

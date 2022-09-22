@@ -1,0 +1,14 @@
+uuid: 807c0716-68c8-4269-9126-255c7de38e9f
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.superhub_manager
+  module:
+    - user
+id: user_add_role_action.superhub_manager
+label: 'Add the superhub manager role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: superhub_manager

@@ -1,0 +1,19 @@
+uuid: 6e143ef3-3356-4845-9f13-881a2b63ed72
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_dootrip_notes
+field_name: field_dootrip_notes
+entity_type: node
+type: string_long
+settings:
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

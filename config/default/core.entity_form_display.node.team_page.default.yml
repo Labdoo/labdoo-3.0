@@ -1,0 +1,161 @@
+uuid: e648036c-685f-46e4-a0ed-8d5dc1e7ecaf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.team_page.body
+    - field.field.node.team_page.comment_node_team_page
+    - field.field.node.team_page.field_additional_emails_conver
+    - field.field.node.team_page.field_additional_teams
+    - field.field.node.team_page.field_are_you_a_student_teacher_
+    - field.field.node.team_page.field_conversation_attachment
+    - field.field.node.team_page.field_send_to_all_conversation
+    - field.field.node.team_page.field_send_to_all_edoo_managers
+    - field.field.node.team_page.field_send_to_all_hub_managers
+    - field.field.node.team_page.field_send_to_conversation
+    - field.field.node.team_page.field_team_my_edoovillage
+    - field.field.node.team_page.og_group_ref
+    - node.type.team_page
+  module:
+    - comment
+    - file
+    - path
+    - text
+id: node.team_page.default
+targetEntityType: node
+bundle: team_page
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 5
+    region: content
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+  comment_node_team_page:
+    type: comment_default
+    weight: 20
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  created:
+    type: datetime_timestamp
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_additional_emails_conver:
+    type: string_textarea
+    weight: 7
+    region: content
+    settings:
+      rows: 1
+      placeholder: ''
+    third_party_settings: {  }
+  field_are_you_a_student_teacher_:
+    type: boolean_checkbox
+    weight: 7
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_conversation_attachment:
+    type: file_generic
+    weight: 6
+    region: content
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+  field_send_to_all_conversation:
+    type: boolean_checkbox
+    weight: 2
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_send_to_all_edoo_managers:
+    type: boolean_checkbox
+    weight: 6
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_send_to_all_hub_managers:
+    type: boolean_checkbox
+    weight: 5
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_send_to_conversation:
+    type: entity_reference_autocomplete
+    weight: 4
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_team_my_edoovillage:
+    type: entity_reference_autocomplete
+    weight: 8
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    weight: 15
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 120
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    weight: 16
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 5
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  field_additional_teams: true
+  og_group_ref: true

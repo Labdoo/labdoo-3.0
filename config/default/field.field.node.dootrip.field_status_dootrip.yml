@@ -1,0 +1,21 @@
+uuid: 5050eb68-e1c7-45ed-a669-e79e39d3fdaa
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_status_dootrip
+    - node.type.dootrip
+  module:
+    - options
+id: node.dootrip.field_status_dootrip
+field_name: field_status_dootrip
+entity_type: node
+bundle: dootrip
+label: Status
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

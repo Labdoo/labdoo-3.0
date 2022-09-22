@@ -1,0 +1,19 @@
+uuid: 0674a426-e460-4d99-a628-ec5bb1b58c6a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_internet_additional_notes
+    - node.type.edoovillage
+id: node.edoovillage.field_internet_additional_notes
+field_name: field_internet_additional_notes
+entity_type: node
+bundle: edoovillage
+label: 'Internet additional notes'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

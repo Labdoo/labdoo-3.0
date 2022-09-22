@@ -1,0 +1,36 @@
+uuid: bf6b5e87-e410-4100-81ae-a08d5f575e08
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.comment_node_dootrip
+    - field.field.comment.comment_node_dootrip.comment_body
+  module:
+    - text
+id: comment.comment_node_dootrip.default
+targetEntityType: comment
+bundle: comment_node_dootrip
+mode: default
+content:
+  author:
+    weight: -2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  comment_body:
+    type: text_textarea
+    weight: 0
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  subject:
+    type: string_textfield
+    weight: 10
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

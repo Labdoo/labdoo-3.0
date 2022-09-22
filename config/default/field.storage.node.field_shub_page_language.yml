@@ -1,0 +1,45 @@
+uuid: 3706df0a-b2ba-4860-a196-cb8d45a239f0
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_shub_page_language
+field_name: field_shub_page_language
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: none
+      label: None
+    -
+      value: ca
+      label: Catalan
+    -
+      value: zh-hans
+      label: 'Chinese (simplified)'
+    -
+      value: zh-hant
+      label: 'Chinese (traditional)'
+    -
+      value: en
+      label: English
+    -
+      value: fr
+      label: French
+    -
+      value: de
+      label: German
+    -
+      value: es
+      label: Spanish
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

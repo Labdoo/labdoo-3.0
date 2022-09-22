@@ -1,0 +1,18 @@
+uuid: 23df82d9-10b4-458e-9e63-70be57fe9804
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main-menu
+    parent: 'main-menu:0:'
+name: 'Team Conversation'
+type: team_page
+description: 'Use team conversations to share your ideas or experiences with other Labdoo users within a given team.'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: true

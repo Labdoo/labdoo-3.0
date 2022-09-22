@@ -1,0 +1,21 @@
+uuid: b81d7eb0-a14b-40f1-ac22-6a190842c086
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.node_gallery_ref_1
+    - node.type.node_gallery_item
+id: node.node_gallery_item.node_gallery_ref_1
+field_name: node_gallery_ref_1
+entity_type: node
+bundle: node_gallery_item
+label: Galleries
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings: {  }
+field_type: entity_reference

@@ -1,0 +1,23 @@
+uuid: 118f9a21-8c97-4072-b9dc-2a96e6cad650
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_dooject_weight
+    - node.type.laptop
+id: node.laptop.field_dooject_weight
+field_name: field_dooject_weight
+entity_type: node
+bundle: laptop
+label: Weight
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: float

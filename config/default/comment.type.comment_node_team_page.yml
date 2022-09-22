@@ -1,0 +1,8 @@
+uuid: 1f4242f2-497a-4bda-a987-c0a353e4c357
+langcode: en
+status: true
+dependencies: {  }
+id: comment_node_team_page
+label: 'Team Conversation comment'
+target_entity_type_id: node
+description: null

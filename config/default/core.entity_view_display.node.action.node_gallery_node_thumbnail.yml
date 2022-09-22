@@ -1,0 +1,34 @@
+uuid: 0f1423fa-4beb-4773-b628-fb0d9c0bea62
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.node_gallery_node_thumbnail
+    - field.field.node.action.body
+    - field.field.node.action.comment_node_action
+    - field.field.node.action.field_action_type
+    - field.field.node.action.field_edoovillage_action
+    - field.field.node.action.field_hub_action
+    - field.field.node.action.field_labdooer_action
+    - field.field.node.action.field_stream_it
+    - node.type.action
+  module:
+    - user
+id: node.action.node_gallery_node_thumbnail
+targetEntityType: node
+bundle: action
+mode: node_gallery_node_thumbnail
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  body: true
+  comment_node_action: true
+  field_action_type: true
+  field_edoovillage_action: true
+  field_hub_action: true
+  field_labdooer_action: true
+  field_stream_it: true

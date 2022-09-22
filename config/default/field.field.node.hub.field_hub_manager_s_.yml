@@ -1,0 +1,21 @@
+uuid: 48298bd5-fbb5-45d3-bb98-e1552c5b47ac
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_hub_manager_s_
+    - node.type.hub
+id: node.hub.field_hub_manager_s_
+field_name: field_hub_manager_s_
+entity_type: node
+bundle: hub
+label: 'Hub manager(s)'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings: {  }
+field_type: entity_reference

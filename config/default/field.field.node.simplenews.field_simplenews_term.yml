@@ -1,0 +1,21 @@
+uuid: d053116c-9e4b-42ee-a7cf-3a4f7a24684f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_simplenews_term
+    - node.type.simplenews
+id: node.simplenews.field_simplenews_term
+field_name: field_simplenews_term
+entity_type: node
+bundle: simplenews
+label: 'Newsletter category'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings: {  }
+field_type: entity_reference

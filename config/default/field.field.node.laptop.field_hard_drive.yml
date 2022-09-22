@@ -1,0 +1,23 @@
+uuid: 82164189-74d8-468b-80a7-302726450bf1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_hard_drive
+    - node.type.laptop
+id: node.laptop.field_hard_drive
+field_name: field_hard_drive
+entity_type: node
+bundle: laptop
+label: 'Hard drive'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

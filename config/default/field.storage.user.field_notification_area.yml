@@ -1,0 +1,20 @@
+uuid: dc44a51e-0782-482b-a7a0-28509b48dcde
+langcode: und
+status: true
+dependencies:
+  module:
+    - user
+id: user.field_notification_area
+field_name: field_notification_area
+entity_type: user
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

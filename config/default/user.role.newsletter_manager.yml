@@ -1,0 +1,25 @@
+uuid: 973f6cd6-75b9-40d4-ba9a-768218422095
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.filtered_html_advanced
+    - node.type.simplenews
+  module:
+    - filter
+    - node
+    - simplenews
+id: newsletter_manager
+label: 'newsletter manager'
+weight: 3
+is_admin: null
+permissions:
+  - 'administer newsletters'
+  - 'administer simplenews subscriptions'
+  - 'create simplenews content'
+  - 'delete own simplenews content'
+  - 'edit any simplenews content'
+  - 'edit own simplenews content'
+  - 'revert revisions'
+  - 'send newsletter'
+  - 'use text format filtered_html_advanced'

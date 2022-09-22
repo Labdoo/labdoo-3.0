@@ -1,5 +1,5 @@
 uuid: f1574179-73d0-48be-8ce1-d1849828cce8
-langcode: en
+langcode: und
 status: true
 dependencies:
   module:
@@ -28,7 +28,7 @@ settings:
       label: '[S4] Deployed and being used'
     -
       value: S5
-      label: '[S5] Waiting to be repaired or recycled'
+      label: '[S5] Waiting to be recycled'
     -
       value: S6
       label: '[S6] Recycled'

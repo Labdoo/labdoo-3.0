@@ -1,0 +1,8 @@
+uuid: 27d2b618-da3f-460a-9d9f-8bcb4fd3eae4
+langcode: en
+status: true
+dependencies: {  }
+id: comment_node_team_task
+label: 'Team Task comment'
+target_entity_type_id: node
+description: null

@@ -1,0 +1,21 @@
+uuid: bfd61315-e030-4f11-9403-454a4259c9ca
+langcode: en
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - gin
+id: seven_search_form
+theme: gin
+region: content
+weight: -10
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: ''
+  label_display: '0'
+  provider: search
+  page_id: ''
+visibility: {  }

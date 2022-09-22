@@ -1,0 +1,18 @@
+uuid: 550fd029-4365-4a6e-8f81-00955747d0a9
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_send_to_all_conversation
+field_name: field_send_to_all_conversation
+entity_type: node
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

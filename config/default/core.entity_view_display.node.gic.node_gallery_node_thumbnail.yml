@@ -1,0 +1,28 @@
+uuid: 48c794e3-afba-40b8-8080-6b3923758f9f
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.node_gallery_node_thumbnail
+    - field.field.node.gic.body
+    - field.field.node.gic.comment_node_gic
+    - field.field.node.gic.field_gic_date
+    - field.field.node.gic.field_gic_edoovillage
+    - node.type.gic
+  module:
+    - user
+id: node.gic.node_gallery_node_thumbnail
+targetEntityType: node
+bundle: gic
+mode: node_gallery_node_thumbnail
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  body: true
+  comment_node_gic: true
+  field_gic_date: true
+  field_gic_edoovillage: true

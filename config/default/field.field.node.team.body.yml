@@ -1,0 +1,27 @@
+uuid: b89a62a5-2e40-4aab-86c5-f34c0da6390b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.team
+  module:
+    - text
+id: node.team.body
+field_name: body
+entity_type: node
+bundle: team
+label: 'Team''s topic'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: '[Add here one sentence description of the team''s topic]'
+    summary: ''
+    format: filtered_html
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+field_type: text_with_summary

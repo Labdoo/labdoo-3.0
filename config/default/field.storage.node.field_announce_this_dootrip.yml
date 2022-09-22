@@ -1,0 +1,18 @@
+uuid: 10ae3b31-10e0-4318-bfce-30e048ab3b03
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_announce_this_dootrip
+field_name: field_announce_this_dootrip
+entity_type: node
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

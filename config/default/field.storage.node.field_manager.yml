@@ -1,0 +1,20 @@
+uuid: 29f62c3c-994a-4edd-bfa6-0b4acf9deec8
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - user
+id: node.field_manager
+field_name: field_manager
+entity_type: node
+type: entity_reference
+settings:
+  target_type: user
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

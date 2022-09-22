@@ -1,0 +1,14 @@
+uuid: fdd423c9-ee25-498f-ba6a-9e0b5b2e890c
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.edoovillage_manager
+  module:
+    - user
+id: user_remove_role_action.edoovillage_manager
+label: 'Remove the edoovillage manager role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: edoovillage_manager

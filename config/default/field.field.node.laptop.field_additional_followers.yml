@@ -1,0 +1,21 @@
+uuid: 345853d1-8908-49c7-a776-15f10e353303
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_additional_followers
+    - node.type.laptop
+id: node.laptop.field_additional_followers
+field_name: field_additional_followers
+entity_type: node
+bundle: laptop
+label: 'Additional followers'
+description: 'Add users who want to follow this dootronic'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings: {  }
+field_type: entity_reference

@@ -1,0 +1,14 @@
+uuid: 7d4d4c94-ca84-4a74-8fbb-5b21fe7ac3c7
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.laptop
+  module:
+    - node
+id: laptop_manager
+label: 'laptop manager'
+weight: 22
+is_admin: null
+permissions:
+  - 'edit any laptop content'

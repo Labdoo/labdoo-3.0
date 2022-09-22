@@ -1,0 +1,27 @@
+uuid: e00d72f6-98cc-4cc4-995e-53b087fddfb6
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.comment_node_node_gallery_gall
+    - field.field.comment.comment_node_node_gallery_gall.comment_body
+  module:
+    - text
+id: comment.comment_node_node_gallery_gall.default
+targetEntityType: comment
+bundle: comment_node_node_gallery_gall
+mode: default
+content:
+  comment_body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

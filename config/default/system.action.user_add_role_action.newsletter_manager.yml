@@ -1,0 +1,14 @@
+uuid: 6197e859-3015-4435-83d6-6c623b337a9b
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.newsletter_manager
+  module:
+    - user
+id: user_add_role_action.newsletter_manager
+label: 'Add the newsletter manager role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: newsletter_manager

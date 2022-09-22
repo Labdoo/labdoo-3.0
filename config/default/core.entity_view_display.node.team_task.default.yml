@@ -1,0 +1,93 @@
+uuid: 81291f98-e8e9-4b61-87db-6b9937f6811a
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_display.comment.comment_node_team_task.default
+    - field.field.node.team_task.body
+    - field.field.node.team_task.comment_node_team_task
+    - field.field.node.team_task.field_send_to_all_task
+    - field.field.node.team_task.field_send_to_task
+    - field.field.node.team_task.field_task_assigned_to
+    - field.field.node.team_task.field_task_attachment
+    - field.field.node.team_task.field_task_due_date
+    - field.field.node.team_task.field_task_priority
+    - field.field.node.team_task.field_task_status
+    - field.field.node.team_task.field_task_type
+    - field.field.node.team_task.og_group_ref
+    - node.type.team_task
+  module:
+    - comment
+    - datetime
+    - options
+    - text
+    - user
+id: node.team_task.default
+targetEntityType: node
+bundle: team_task
+mode: default
+content:
+  body:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  comment_node_team_task:
+    type: comment_default
+    label: hidden
+    settings:
+      view_mode: default
+      pager_id: 0
+    third_party_settings: {  }
+    weight: 20
+    region: content
+  field_task_assigned_to:
+    type: entity_reference_label
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_task_due_date:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: long
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_task_priority:
+    type: list_default
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_task_status:
+    type: list_default
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_task_type:
+    type: list_default
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_send_to_all_task: true
+  field_send_to_task: true
+  field_task_attachment: true
+  og_group_ref: true

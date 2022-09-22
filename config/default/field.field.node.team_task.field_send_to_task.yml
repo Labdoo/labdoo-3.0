@@ -1,0 +1,21 @@
+uuid: 4cc74a45-b677-4757-a33a-1c9296b6494b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_send_to_task
+    - node.type.team_task
+id: node.team_task.field_send_to_task
+field_name: field_send_to_task
+entity_type: node
+bundle: team_task
+label: 'Share with additional users'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings: {  }
+field_type: entity_reference

@@ -1,0 +1,27 @@
+uuid: 2284b0d2-d9d9-40a4-81a6-545828d453d0
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_edoovillage_status
+field_name: field_edoovillage_status
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: open
+      label: Open
+    -
+      value: completed
+      label: Completed
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

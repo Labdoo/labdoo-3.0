@@ -1,0 +1,21 @@
+uuid: 425588f6-2bc2-4d5c-a9b3-601a7a527e87
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_dootrip_additional_editors
+    - node.type.dootrip
+id: node.dootrip.field_dootrip_additional_editors
+field_name: field_dootrip_additional_editors
+entity_type: node
+bundle: dootrip
+label: 'Additional editors'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings: {  }
+field_type: entity_reference

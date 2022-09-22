@@ -1,0 +1,8 @@
+uuid: 6f2a901c-dad7-47d9-846e-cc587c16f4d3
+langcode: en
+status: true
+dependencies: {  }
+id: comment_node_book
+label: 'Wiki Page comment'
+target_entity_type_id: node
+description: null

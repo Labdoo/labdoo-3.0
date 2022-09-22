@@ -1,0 +1,26 @@
+uuid: 26b1f968-6ce8-4428-b83f-15016f7aeb84
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.node_gallery_node_thumbnail
+    - field.field.node.labdoo_story.comment_node_labdoo_story
+    - field.field.node.labdoo_story.field_story_edoovillage
+    - field.field.node.labdoo_story.field_story_section
+    - node.type.labdoo_story
+  module:
+    - user
+id: node.labdoo_story.node_gallery_node_thumbnail
+targetEntityType: node
+bundle: labdoo_story
+mode: node_gallery_node_thumbnail
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  comment_node_labdoo_story: true
+  field_story_edoovillage: true
+  field_story_section: true

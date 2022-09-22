@@ -1,0 +1,21 @@
+uuid: 347fdc8d-4025-4b54-a464-bcbcfc8d1611
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_send_to_conversation
+    - node.type.team_page
+id: node.team_page.field_send_to_conversation
+field_name: field_send_to_conversation
+entity_type: node
+bundle: team_page
+label: 'Share with additional users'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings: {  }
+field_type: entity_reference

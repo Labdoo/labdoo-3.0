@@ -1,0 +1,21 @@
+uuid: 055b03b9-f326-46e3-acae-16a54eb997c5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_story_edoovillage
+    - node.type.labdoo_story
+id: node.labdoo_story.field_story_edoovillage
+field_name: field_story_edoovillage
+entity_type: node
+bundle: labdoo_story
+label: 'This story comes from'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings: {  }
+field_type: entity_reference

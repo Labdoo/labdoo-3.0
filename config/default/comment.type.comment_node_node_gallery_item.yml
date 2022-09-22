@@ -1,0 +1,8 @@
+uuid: cdba15d5-f5f1-4202-9995-8f1b62268e93
+langcode: en
+status: true
+dependencies: {  }
+id: comment_node_node_gallery_item
+label: 'Gallery Item comment'
+target_entity_type_id: node
+description: null

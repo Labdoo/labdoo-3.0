@@ -1,0 +1,19 @@
+uuid: 97bf5223-db0f-4d35-ace5-d2011b8a31c8
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+id: node.node_gallery_ref_1
+field_name: node_gallery_ref_1
+entity_type: node
+type: entity_reference
+settings:
+  target_type: node
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

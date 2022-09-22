@@ -1,0 +1,60 @@
+uuid: b05838eb-b50f-4d5f-a682-5c484e6facd4
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_display.comment.comment_node_team_page.default
+    - field.field.node.team_page.body
+    - field.field.node.team_page.comment_node_team_page
+    - field.field.node.team_page.field_additional_emails_conver
+    - field.field.node.team_page.field_additional_teams
+    - field.field.node.team_page.field_are_you_a_student_teacher_
+    - field.field.node.team_page.field_conversation_attachment
+    - field.field.node.team_page.field_send_to_all_conversation
+    - field.field.node.team_page.field_send_to_all_edoo_managers
+    - field.field.node.team_page.field_send_to_all_hub_managers
+    - field.field.node.team_page.field_send_to_conversation
+    - field.field.node.team_page.field_team_my_edoovillage
+    - field.field.node.team_page.og_group_ref
+    - node.type.team_page
+  module:
+    - comment
+    - text
+    - user
+id: node.team_page.default
+targetEntityType: node
+bundle: team_page
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  comment_node_team_page:
+    type: comment_default
+    label: hidden
+    settings:
+      view_mode: default
+      pager_id: 0
+    third_party_settings: {  }
+    weight: 20
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_additional_emails_conver: true
+  field_additional_teams: true
+  field_are_you_a_student_teacher_: true
+  field_conversation_attachment: true
+  field_send_to_all_conversation: true
+  field_send_to_all_edoo_managers: true
+  field_send_to_all_hub_managers: true
+  field_send_to_conversation: true
+  field_team_my_edoovillage: true
+  og_group_ref: true

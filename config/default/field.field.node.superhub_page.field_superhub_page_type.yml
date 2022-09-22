@@ -1,0 +1,21 @@
+uuid: 33bb4f5d-b247-4610-8f8f-c6c511f184a4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_superhub_page_type
+    - node.type.superhub_page
+  module:
+    - options
+id: node.superhub_page.field_superhub_page_type
+field_name: field_superhub_page_type
+entity_type: node
+bundle: superhub_page
+label: Type
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,29 @@
+uuid: eca9fddc-39f2-44bd-96d0-588631ea30bf
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.comment_node_team_page
+    - field.field.comment.comment_node_team_page.comment_body
+    - field.field.comment.comment_node_team_page.field_conv_comment_attach
+  module:
+    - text
+id: comment.comment_node_team_page.default
+targetEntityType: comment
+bundle: comment_node_team_page
+mode: default
+content:
+  comment_body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_conv_comment_attach: true

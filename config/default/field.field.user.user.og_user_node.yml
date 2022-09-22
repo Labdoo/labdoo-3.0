@@ -1,0 +1,22 @@
+uuid: 474f1857-39df-4035-bbe0-aec7b434afce
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.og_user_node
+  module:
+    - user
+id: user.user.og_user_node
+field_name: og_user_node
+entity_type: user
+bundle: user
+label: 'Group membership'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings: {  }
+field_type: entity_reference

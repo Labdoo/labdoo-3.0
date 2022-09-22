@@ -1,0 +1,14 @@
+uuid: 6322cbc7-f304-4094-824b-156bfb4f7561
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.laptop_manager
+  module:
+    - user
+id: user_add_role_action.laptop_manager
+label: 'Add the laptop manager role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: laptop_manager

@@ -1,0 +1,8 @@
+uuid: 8b1923a4-6156-4f36-a3d7-f2951ebee124
+langcode: en
+status: true
+dependencies: {  }
+id: comment_node_labdoo_slide
+label: 'Labdoo FlexSlide comment'
+target_entity_type_id: node
+description: null

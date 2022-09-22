@@ -1,0 +1,27 @@
+uuid: 02adae04-cacd-4ab6-9f4e-83e3bb93b0a5
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.comment_node_team_task
+    - field.storage.comment.field_task_comment_attach
+  module:
+    - file
+id: comment.comment_node_team_task.field_task_comment_attach
+field_name: field_task_comment_attach
+entity_type: comment
+bundle: comment_node_team_task
+label: Attachment
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: txt
+  max_filesize: ''
+  description_field: false
+field_type: file

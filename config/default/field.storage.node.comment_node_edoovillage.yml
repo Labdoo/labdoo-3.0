@@ -1,0 +1,20 @@
+uuid: 88b56a2a-489d-44f6-acff-736865482cfa
+langcode: en
+status: true
+dependencies:
+  module:
+    - comment
+    - node
+id: node.comment_node_edoovillage
+field_name: comment_node_edoovillage
+entity_type: node
+type: comment
+settings:
+  comment_type: comment_node_edoovillage
+module: comment
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

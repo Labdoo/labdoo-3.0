@@ -1,0 +1,32 @@
+uuid: 5b2fca7c-90f6-4a11-a9b1-6f5b0c86ba80
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.node_gallery_node_thumbnail
+    - field.field.node.superhub_page.body
+    - field.field.node.superhub_page.comment_node_superhub_page
+    - field.field.node.superhub_page.field_additional_editors_shub
+    - field.field.node.superhub_page.field_linked_pages
+    - field.field.node.superhub_page.field_shub_page_language
+    - field.field.node.superhub_page.field_superhub_page_type
+    - node.type.superhub_page
+  module:
+    - user
+id: node.superhub_page.node_gallery_node_thumbnail
+targetEntityType: node
+bundle: superhub_page
+mode: node_gallery_node_thumbnail
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  body: true
+  comment_node_superhub_page: true
+  field_additional_editors_shub: true
+  field_linked_pages: true
+  field_shub_page_language: true
+  field_superhub_page_type: true

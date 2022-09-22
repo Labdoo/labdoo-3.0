@@ -3,9 +3,37 @@ langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_display.comment.comment_node_edoovillage.default
     - field.field.node.edoovillage.body
+    - field.field.node.edoovillage.comment_node_edoovillage
+    - field.field.node.edoovillage.field_additional_files
+    - field.field.node.edoovillage.field_additional_info_language
+    - field.field.node.edoovillage.field_doojects_additional_notes
+    - field.field.node.edoovillage.field_edoo_additional_editors
+    - field.field.node.edoovillage.field_edoo_additional_followers
+    - field.field.node.edoovillage.field_edoo_additional_notif_em
+    - field.field.node.edoovillage.field_edoovillage_photo_album
+    - field.field.node.edoovillage.field_edoovillage_status
+    - field.field.node.edoovillage.field_hub
+    - field.field.node.edoovillage.field_internet_additional_notes
+    - field.field.node.edoovillage.field_internet_connection_type
+    - field.field.node.edoovillage.field_local_language_s_
+    - field.field.node.edoovillage.field_number_of_laptops_needed
+    - field.field.node.edoovillage.field_number_of_students
+    - field.field.node.edoovillage.field_number_of_teachers
+    - field.field.node.edoovillage.field_on_site_point_of_contact
+    - field.field.node.edoovillage.field_project_application
+    - field.field.node.edoovillage.field_project_description
+    - field.field.node.edoovillage.field_project_manager_s_
+    - field.field.node.edoovillage.field_project_summary
+    - field.field.node.edoovillage.field_semaphore
+    - field.field.node.edoovillage.field_socket_type
+    - field.field.node.edoovillage.field_socket_voltage
     - node.type.edoovillage
   module:
+    - comment
+    - file
+    - options
     - text
     - user
 id: node.edoovillage.default
@@ -20,9 +48,174 @@ content:
     third_party_settings: {  }
     weight: 101
     region: content
+  comment_node_edoovillage:
+    type: comment_default
+    label: hidden
+    settings:
+      view_mode: default
+      pager_id: 0
+    third_party_settings: {  }
+    weight: 20
+    region: content
+  field_additional_files:
+    type: file_default
+    label: inline
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    weight: 20
+    region: content
+  field_additional_info_language:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 15
+    region: content
+  field_doojects_additional_notes:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 13
+    region: content
+  field_edoovillage_photo_album:
+    type: entity_reference_label
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_edoovillage_status:
+    type: list_default
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    weight: 9
+    region: content
+  field_hub:
+    type: entity_reference_label
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_internet_additional_notes:
+    type: basic_string
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    weight: 19
+    region: content
+  field_internet_connection_type:
+    type: list_default
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    weight: 18
+    region: content
+  field_local_language_s_:
+    type: string
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 14
+    region: content
+  field_number_of_laptops_needed:
+    type: number_integer
+    label: inline
+    settings:
+      thousand_separator: ' '
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 12
+    region: content
+  field_number_of_students:
+    type: number_integer
+    label: inline
+    settings:
+      thousand_separator: ' '
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_number_of_teachers:
+    type: number_integer
+    label: inline
+    settings:
+      thousand_separator: ' '
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_on_site_point_of_contact:
+    type: text_default
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_project_application:
+    type: file_default
+    label: inline
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    weight: 8
+    region: content
+  field_project_description:
+    type: text_default
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_project_manager_s_:
+    type: entity_reference_label
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_project_summary:
+    type: string
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_semaphore:
+    type: list_default
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    weight: 10
+    region: content
+  field_socket_type:
+    type: list_default
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    weight: 17
+    region: content
+  field_socket_voltage:
+    type: list_default
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    weight: 16
+    region: content
   links:
     settings: {  }
     third_party_settings: {  }
     weight: 100
     region: content
-hidden: {  }
+hidden:
+  field_edoo_additional_editors: true
+  field_edoo_additional_followers: true
+  field_edoo_additional_notif_em: true

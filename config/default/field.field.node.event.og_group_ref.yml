@@ -1,0 +1,21 @@
+uuid: e7186137-8269-4530-a2f2-e3327159e23b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.og_group_ref
+    - node.type.event
+id: node.event.og_group_ref
+field_name: og_group_ref
+entity_type: node
+bundle: event
+label: Team(s)
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings: {  }
+field_type: entity_reference

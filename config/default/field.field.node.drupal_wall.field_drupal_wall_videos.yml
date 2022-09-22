@@ -1,0 +1,19 @@
+uuid: 42be48a8-511a-4cd3-8208-b792e0c77f0a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_drupal_wall_videos
+    - node.type.drupal_wall
+id: node.drupal_wall.field_drupal_wall_videos
+field_name: field_drupal_wall_videos
+entity_type: node
+bundle: drupal_wall
+label: 'Share Videos'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

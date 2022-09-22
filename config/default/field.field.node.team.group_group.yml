@@ -1,0 +1,23 @@
+uuid: 460d53c5-c3e6-41cf-a8b1-42aad863dffa
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.group_group
+    - node.type.team
+id: node.team.group_group
+field_name: group_group
+entity_type: node
+bundle: team
+label: Team
+description: 'Determine if this is an OG group.'
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

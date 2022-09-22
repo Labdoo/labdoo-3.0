@@ -1,0 +1,8 @@
+uuid: 7c99c263-a23f-4612-a462-9d60dd5d2b7b
+langcode: en
+status: true
+dependencies: {  }
+id: comment_node_hub
+label: 'Hub comment'
+target_entity_type_id: node
+description: null

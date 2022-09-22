@@ -1,0 +1,30 @@
+uuid: db838d38-7694-4e93-9d29-fd44afade3c9
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.joinprofile_field
+    - field.field.node.drupal_wall.body
+    - field.field.node.drupal_wall.comment_node_drupal_wall
+    - field.field.node.drupal_wall.field_drupal_wall_image_style
+    - field.field.node.drupal_wall.field_drupal_wall_photos
+    - field.field.node.drupal_wall.field_drupal_wall_videos
+    - node.type.drupal_wall
+  module:
+    - user
+id: node.drupal_wall.joinprofile_field
+targetEntityType: node
+bundle: drupal_wall
+mode: joinprofile_field
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  body: true
+  comment_node_drupal_wall: true
+  field_drupal_wall_image_style: true
+  field_drupal_wall_photos: true
+  field_drupal_wall_videos: true

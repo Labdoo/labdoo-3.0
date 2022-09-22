@@ -1,0 +1,21 @@
+uuid: 9134edd3-d350-4f4c-870a-cf158ec6e90b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_hub_laptop
+    - node.type.laptop
+id: node.laptop.field_hub_laptop
+field_name: field_hub_laptop
+entity_type: node
+bundle: laptop
+label: 'Source hub'
+description: 'If you are an individual tagger, select here the group "Grassroots". If you belong to a hub, select the name of your hub.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings: {  }
+field_type: entity_reference

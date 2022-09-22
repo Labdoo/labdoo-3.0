@@ -1,0 +1,52 @@
+uuid: 1767841b-7d0c-4c92-b010-03aa55d9eecc
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.filtered_html_advanced
+    - node.type.book
+    - node.type.dootrip
+    - node.type.edoovillage
+    - node.type.hub
+    - node.type.labdoo_story
+    - node.type.laptop
+    - node.type.node_gallery_item
+    - node.type.superhub_page
+  module:
+    - filter
+    - node
+id: superhub_manager
+label: 'superhub manager'
+weight: 6
+is_admin: null
+permissions:
+  - 'assign edoovillage manager role'
+  - 'assign hub manager role'
+  - 'clone node'
+  - 'create event_registration registration other anonymous'
+  - 'create event_registration registration other users'
+  - 'create hub content'
+  - 'create labdoo_story content'
+  - 'create node_gallery_item content'
+  - 'create superhub_page content'
+  - 'delete any book content'
+  - 'delete any node_gallery_item content'
+  - 'delete own hub content'
+  - 'delete own labdoo_story content'
+  - 'delete own node_gallery_item content'
+  - 'delete own superhub_page content'
+  - 'edit any dootrip content'
+  - 'edit any edoovillage content'
+  - 'edit any hub content'
+  - 'edit any labdoo_story content'
+  - 'edit any laptop content'
+  - 'edit any node_gallery_item content'
+  - 'edit any superhub_page content'
+  - 'edit event_registration registration state'
+  - 'edit own hub content'
+  - 'edit own labdoo_story content'
+  - 'edit own node_gallery_item content'
+  - 'edit own superhub_page content'
+  - 'revert revisions'
+  - 'upload to all galleries'
+  - 'use text format filtered_html_advanced'

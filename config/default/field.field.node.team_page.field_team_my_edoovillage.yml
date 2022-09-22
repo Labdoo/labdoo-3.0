@@ -1,0 +1,21 @@
+uuid: 14cd52a4-11bb-418c-9a94-d08b85c2f4c9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_team_my_edoovillage
+    - node.type.team_page
+id: node.team_page.field_team_my_edoovillage
+field_name: field_team_my_edoovillage
+entity_type: node
+bundle: team_page
+label: 'My edoovillage: '
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings: {  }
+field_type: entity_reference

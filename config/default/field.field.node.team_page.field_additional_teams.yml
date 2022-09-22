@@ -1,0 +1,21 @@
+uuid: a82ec575-6131-4855-a9a4-655567cb67ce
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_additional_teams
+    - node.type.team_page
+id: node.team_page.field_additional_teams
+field_name: field_additional_teams
+entity_type: node
+bundle: team_page
+label: 'Share with additional teams'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings: {  }
+field_type: entity_reference

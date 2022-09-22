@@ -1,0 +1,23 @@
+uuid: fe1a651a-4b75-4d00-9f0a-a17da9ec2fd2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.team_task
+  module:
+    - text
+id: node.team_task.body
+field_name: body
+entity_type: node
+bundle: team_task
+label: Description
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+field_type: text_with_summary

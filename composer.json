@@ -46,6 +46,7 @@
         "drupal/paragraphs": "^1.14",
         "drupal/redirect": "^1.7",
         "drupal/registration": "^3.0@alpha",
+        "drupal/simplenews": "^3.0@beta",
         "drupal/views_migration": "^1.1",
         "drush/drush": "^11.1",
         "geocoder-php/google-maps-provider": "^4.6"

@@ -1,0 +1,8 @@
+uuid: d4f520b3-bcf8-439b-a3de-9fe675b20549
+langcode: en
+status: true
+dependencies: {  }
+id: comment_node_superhub_page
+label: 'Superhub Page comment'
+target_entity_type_id: node
+description: null

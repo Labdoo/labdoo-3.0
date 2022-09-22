@@ -1,0 +1,21 @@
+uuid: c69b8aed-7244-4ebb-9b17-efcdc8e1ac28
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_manager
+    - node.type.laptop
+id: node.laptop.field_manager
+field_name: field_manager
+entity_type: node
+bundle: laptop
+label: Manager
+description: 'The user currently managing this dootronic'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings: {  }
+field_type: entity_reference

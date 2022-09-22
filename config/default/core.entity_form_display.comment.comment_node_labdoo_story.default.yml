@@ -1,0 +1,29 @@
+uuid: 4b4d5649-c65e-4793-802a-a64e468732cf
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.comment_node_labdoo_story
+    - field.field.comment.comment_node_labdoo_story.comment_body
+  module:
+    - text
+id: comment.comment_node_labdoo_story.default
+targetEntityType: comment
+bundle: comment_node_labdoo_story
+mode: default
+content:
+  author:
+    weight: -2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  comment_body:
+    type: text_textarea
+    weight: 0
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  subject: true

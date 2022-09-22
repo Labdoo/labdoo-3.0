@@ -1,0 +1,27 @@
+uuid: 24421c31-6c60-411f-a884-f9359d29415f
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.comment_node_gic
+    - field.field.comment.comment_node_gic.comment_body
+  module:
+    - text
+id: comment.comment_node_gic.default
+targetEntityType: comment
+bundle: comment_node_gic
+mode: default
+content:
+  comment_body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

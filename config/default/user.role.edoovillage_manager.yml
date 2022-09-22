@@ -1,0 +1,29 @@
+uuid: 0d8bf0f9-09a8-4c08-aec9-ddf2d87e4a5e
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.filtered_html_advanced
+    - node.type.edoovillage
+    - node.type.labdoo_story
+    - node.type.node_gallery_item
+  module:
+    - filter
+    - node
+id: edoovillage_manager
+label: 'edoovillage manager'
+weight: 13
+is_admin: null
+permissions:
+  - 'create edoovillage content'
+  - 'create labdoo_story content'
+  - 'create node_gallery_item content'
+  - 'delete any node_gallery_item content'
+  - 'delete own node_gallery_item content'
+  - 'edit any node_gallery_item content'
+  - 'edit own edoovillage content'
+  - 'edit own labdoo_story content'
+  - 'edit own node_gallery_item content'
+  - 'revert revisions'
+  - 'upload to all galleries'
+  - 'use text format filtered_html_advanced'

@@ -1,0 +1,21 @@
+uuid: 4f473cf9-6531-4ead-ad99-413c0a4f093b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_edoo_additional_editors
+    - node.type.edoovillage
+id: node.edoovillage.field_edoo_additional_editors
+field_name: field_edoo_additional_editors
+entity_type: node
+bundle: edoovillage
+label: 'Additional editors'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings: {  }
+field_type: entity_reference

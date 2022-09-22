@@ -1,0 +1,12 @@
+uuid: 901cdf67-e21d-46ef-b1bc-42ad26948ad9
+langcode: en
+status: true
+dependencies: {  }
+id: website_feedback
+label: 'Website feedback'
+recipients:
+  - ''
+reply: ''
+weight: 0
+message: null
+redirect: null

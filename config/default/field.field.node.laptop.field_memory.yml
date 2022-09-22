@@ -1,0 +1,23 @@
+uuid: 5eb4012b-bb44-4694-b831-c5553e6e01fd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_memory
+    - node.type.laptop
+id: node.laptop.field_memory
+field_name: field_memory
+entity_type: node
+bundle: laptop
+label: Memory
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

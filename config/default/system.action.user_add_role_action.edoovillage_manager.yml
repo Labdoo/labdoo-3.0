@@ -1,0 +1,14 @@
+uuid: 57208868-d39f-4412-977f-fa503ae2f0bc
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.edoovillage_manager
+  module:
+    - user
+id: user_add_role_action.edoovillage_manager
+label: 'Add the edoovillage manager role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: edoovillage_manager

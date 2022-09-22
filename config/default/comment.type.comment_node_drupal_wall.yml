@@ -1,0 +1,8 @@
+uuid: e59be00a-ac29-4d36-80aa-12a8c2e855f4
+langcode: en
+status: true
+dependencies: {  }
+id: comment_node_drupal_wall
+label: 'Share comment'
+target_entity_type_id: node
+description: null

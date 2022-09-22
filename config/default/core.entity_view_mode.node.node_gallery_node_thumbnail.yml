@@ -1,0 +1,10 @@
+uuid: 74d0c394-cb79-4641-9923-8e871036be95
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.node_gallery_node_thumbnail
+label: node_gallery_node_thumbnail
+targetEntityType: node
+cache: true

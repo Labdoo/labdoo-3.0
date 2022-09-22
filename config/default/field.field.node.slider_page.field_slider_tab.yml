@@ -1,0 +1,24 @@
+uuid: 54ad55fc-d0b3-454f-b5d8-23ed146ae7a0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_slider_tab
+    - node.type.slider_page
+  module:
+    - text
+id: node.slider_page.field_slider_tab
+field_name: field_slider_tab
+entity_type: node
+bundle: slider_page
+label: Tab
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: "<?php\r\nglobal $user;\r\n$thisValue = '<img alt=\"\" src=\"/profiles/labdoo/files/pictures/dashboard-tabs-doojects-en.png\" style=\"width: 106px; height: 26px; \"/>';\r\nprint $thisValue;\r\nprint \" \";\r\nprint $user->uid;\r\n//return array(0 => array('value' => $thisValue));\r\n?>"
+    format: php_code
+default_value_callback: ''
+settings: {  }
+field_type: text_long

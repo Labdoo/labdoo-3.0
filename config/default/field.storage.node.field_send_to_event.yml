@@ -1,0 +1,20 @@
+uuid: 60001e16-0c76-4538-81c9-0dce2f20ac70
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - user
+id: node.field_send_to_event
+field_name: field_send_to_event
+entity_type: node
+type: entity_reference
+settings:
+  target_type: user
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

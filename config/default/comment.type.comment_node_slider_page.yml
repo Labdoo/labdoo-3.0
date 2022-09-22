@@ -1,0 +1,8 @@
+uuid: 4e5a75f3-7b26-4019-9a9c-7908c6387a6c
+langcode: en
+status: true
+dependencies: {  }
+id: comment_node_slider_page
+label: 'Dashboard slider page comment'
+target_entity_type_id: node
+description: null

@@ -1,0 +1,23 @@
+uuid: 5cb73276-66be-4394-b7e9-b5d0ba471c8c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_send_to_all_edoo_managers
+    - node.type.team_page
+id: node.team_page.field_send_to_all_edoo_managers
+field_name: field_send_to_all_edoo_managers
+entity_type: node
+bundle: team_page
+label: 'Share with all edoovillage managers'
+description: 'Please don''t select unless it is necessary that all hub or edoovillage managers receive this message. <a href="../../content/writing-message-all-hub-and-edoovillage-managers" target="_blank">[Help]</a>'
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

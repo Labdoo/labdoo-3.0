@@ -1,0 +1,44 @@
+uuid: 94a30ad2-71d2-4ddb-9165-7afcfafe3e79
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.event.body
+    - field.field.node.event.comment_node_event
+    - field.field.node.event.field_additional_emails_event
+    - field.field.node.event.field_image_event
+    - field.field.node.event.field_location_event
+    - field.field.node.event.field_send_to_all_event
+    - field.field.node.event.field_send_to_event
+    - field.field.node.event.og_group_ref
+    - node.type.event
+  module:
+    - text
+    - user
+id: node.event.teaser
+targetEntityType: node
+bundle: event
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  comment_node_event: true
+  field_additional_emails_event: true
+  field_image_event: true
+  field_location_event: true
+  field_send_to_all_event: true
+  field_send_to_event: true
+  og_group_ref: true

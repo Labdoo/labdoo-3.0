@@ -1,0 +1,20 @@
+uuid: 9c268ec9-9014-41d1-ba0d-4c0a6b380e96
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_amp_hours
+field_name: field_amp_hours
+entity_type: node
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

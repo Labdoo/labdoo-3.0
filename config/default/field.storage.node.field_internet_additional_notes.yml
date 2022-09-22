@@ -1,0 +1,19 @@
+uuid: 20646aba-418e-4d31-aeb8-64f12d6059f7
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_internet_additional_notes
+field_name: field_internet_additional_notes
+entity_type: node
+type: string_long
+settings:
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

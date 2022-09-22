@@ -1,0 +1,23 @@
+uuid: 8f8a1508-e72c-4670-bbcb-6cc516112a0b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_send_to_all_task
+    - node.type.team_task
+id: node.team_task.field_send_to_all_task
+field_name: field_send_to_all_task
+entity_type: node
+bundle: team_task
+label: 'Share with all members of this team'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,17 @@
+uuid: 09e113ed-74da-4cd4-8bfe-d461e1d84616
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.team
+  module:
+    - node
+id: team_manager
+label: 'team manager'
+weight: 7
+is_admin: null
+permissions:
+  - 'create team content'
+  - 'delete own team content'
+  - 'edit own team content'
+  - 'revert revisions'

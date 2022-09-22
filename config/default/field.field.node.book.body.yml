@@ -14,12 +14,12 @@ field_name: body
 entity_type: node
 bundle: book
 label: Body
-description: ''
+description: "Remember, when writing a wiki page:\r\n<ul>\r\n<li>Make sure you have read first the <a href=\"/../content/best-practices\">best practices</a> wiki page.\r\n<li>Avoid very long pages, break them down into small sections.</li>\r\n<li>Keep it simple. You can use HTML markup tags such as &lt;strong&gt;, &lt;table&gt;, but it is recommended to only use them if you really need them.</li>\r\n<li>If you do use markup tags, ensure they are correctly written (every opening tag must much a closing tag, e.g. &lt;strong>text&lt;/strong&gt;).</li>\r\n<li>Save your text often to ensure it is properly formatted.</li>\r\n</ul>\r\n"
 required: false
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
-  display_summary: true
+  display_summary: false
   required_summary: false
 field_type: text_with_summary

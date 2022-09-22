@@ -1,0 +1,20 @@
+uuid: 9162f31d-50f2-4168-8103-4cc3a8e89654
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_number_of_laptops_needed
+field_name: field_number_of_laptops_needed
+entity_type: node
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
