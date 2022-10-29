@@ -1,4 +1,4 @@
-uuid: 559d83ca-6d12-4310-95c8-b4f5718782fa
+uuid: 4ad647eb-bd58-49c6-8cf4-c68eabe6c5ab
 langcode: en
 status: true
 dependencies: {  }
@@ -37,6 +37,29 @@ process:
 destination:
   plugin: book
 migration_dependencies:
-  required: {  }
+  required:
+    - upgrade_d7_node_complete_action
+    - upgrade_d7_node_complete_article
+    - upgrade_d7_node_complete_blog
+    - upgrade_d7_node_complete_book
+    - upgrade_d7_node_complete_dootrip
+    - upgrade_d7_node_complete_drupal_wall
+    - upgrade_d7_node_complete_edoovillage
+    - upgrade_d7_node_complete_event
+    - upgrade_d7_node_complete_gic
+    - upgrade_d7_node_complete_hub
+    - upgrade_d7_node_complete_labdoo_slide
+    - upgrade_d7_node_complete_labdoo_story
+    - upgrade_d7_node_complete_laptop
+    - upgrade_d7_node_complete_node_gallery_gallery
+    - upgrade_d7_node_complete_node_gallery_item
+    - upgrade_d7_node_complete_page
+    - upgrade_d7_node_complete_private_page
+    - upgrade_d7_node_complete_simplenews
+    - upgrade_d7_node_complete_slider_page
+    - upgrade_d7_node_complete_superhub_page
+    - upgrade_d7_node_complete_team
+    - upgrade_d7_node_complete_team_page
+    - upgrade_d7_node_complete_team_task
   optional:
     - upgrade_d7_book

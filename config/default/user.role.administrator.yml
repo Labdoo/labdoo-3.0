@@ -27,7 +27,6 @@ dependencies:
     - node
     - path
     - search
-    - simplenews
     - system
     - taxonomy
     - toolbar

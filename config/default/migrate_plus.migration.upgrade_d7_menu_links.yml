@@ -1,4 +1,4 @@
-uuid: c43a8994-b575-4dfc-a2f5-8661fae2fd01
+uuid: 70abca23-c07a-4c14-bfe9-7197bcca97bf
 langcode: en
 status: true
 dependencies: {  }
@@ -114,4 +114,27 @@ migration_dependencies:
   required:
     - upgrade_d7_menu
   optional:
+    - upgrade_d7_node_complete_action
+    - upgrade_d7_node_complete_article
+    - upgrade_d7_node_complete_blog
+    - upgrade_d7_node_complete_book
+    - upgrade_d7_node_complete_dootrip
+    - upgrade_d7_node_complete_drupal_wall
+    - upgrade_d7_node_complete_edoovillage
+    - upgrade_d7_node_complete_event
+    - upgrade_d7_node_complete_gic
+    - upgrade_d7_node_complete_hub
+    - upgrade_d7_node_complete_labdoo_slide
+    - upgrade_d7_node_complete_labdoo_story
+    - upgrade_d7_node_complete_laptop
+    - upgrade_d7_node_complete_node_gallery_gallery
+    - upgrade_d7_node_complete_node_gallery_item
+    - upgrade_d7_node_complete_page
+    - upgrade_d7_node_complete_private_page
+    - upgrade_d7_node_complete_simplenews
+    - upgrade_d7_node_complete_slider_page
+    - upgrade_d7_node_complete_superhub_page
+    - upgrade_d7_node_complete_team
+    - upgrade_d7_node_complete_team_page
+    - upgrade_d7_node_complete_team_task
     - upgrade_d7_menu

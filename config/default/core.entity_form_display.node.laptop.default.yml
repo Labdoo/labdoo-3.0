@@ -1,4 +1,4 @@
-uuid: aaedaab0-d015-427e-99f1-c647a41b4489
+uuid: c0e90cb0-18f4-4509-a894-e83ca0b2914f
 langcode: en
 status: true
 dependencies:
@@ -32,68 +32,8 @@ dependencies:
     - node.type.laptop
   module:
     - comment
-    - field_group
     - image
     - path
-third_party_settings:
-  field_group:
-    group_additional_information:
-      children:
-        - field_additional_editors
-        - field_additional_followers
-        - field_additional_notes
-        - field_additional_notification_em
-        - field_amp_hours
-        - field_battery_duration
-        - field_battery_watt_hours
-        - field_cpu
-        - field_cpu_type
-        - field_current_operating_system
-        - field_dooject_weight
-        - field_dootrips
-        - field_hard_drive
-        - field_keyboard
-        - field_memory
-        - field_pick_me_up
-        - field_volts
-        - field_laptop
-      label: 'Additional Information'
-      region: content
-      parent_name: ''
-      weight: 2
-      format_type: tab
-      format_settings:
-        label: 'Additional Information'
-        classes: 'group-additional-information field-group-htab'
-        id: ''
-        formatter: open
-        description: ''
-        required_fields: true
-    group_basic_information:
-      children:
-        - field_device_type
-        - field_edoovillage_destination
-        - field_hub_laptop
-        - field_manager
-        - field_model
-        - field_picture
-        - field_serial_number
-        - field_status
-        - locations
-        - path
-      label: 'Basic Information'
-      region: content
-      parent_name: ''
-      weight: 1
-      format_type: tabs
-      format_settings:
-        label: 'Basic Information'
-        classes: 'group-basic-information field-group-htab'
-        id: ''
-        formatter: open
-        description: ''
-        required_fields: true
-        direction: horizontal
 id: node.laptop.default
 targetEntityType: node
 bundle: laptop

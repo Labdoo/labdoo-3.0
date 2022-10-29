@@ -1,4 +1,4 @@
-uuid: 807b8825-b025-4754-a6d1-9346bac8d917
+uuid: 483aedbe-3ee8-4d39-97c0-6917bd99149c
 langcode: en
 status: true
 dependencies: {  }
@@ -31,7 +31,30 @@ process:
   entity_id:
     -
       plugin: migration_lookup
-      migration: {  }
+      migration:
+        - upgrade_d7_node_complete_action
+        - upgrade_d7_node_complete_article
+        - upgrade_d7_node_complete_blog
+        - upgrade_d7_node_complete_book
+        - upgrade_d7_node_complete_dootrip
+        - upgrade_d7_node_complete_drupal_wall
+        - upgrade_d7_node_complete_edoovillage
+        - upgrade_d7_node_complete_event
+        - upgrade_d7_node_complete_gic
+        - upgrade_d7_node_complete_hub
+        - upgrade_d7_node_complete_labdoo_slide
+        - upgrade_d7_node_complete_labdoo_story
+        - upgrade_d7_node_complete_laptop
+        - upgrade_d7_node_complete_node_gallery_gallery
+        - upgrade_d7_node_complete_node_gallery_item
+        - upgrade_d7_node_complete_page
+        - upgrade_d7_node_complete_private_page
+        - upgrade_d7_node_complete_simplenews
+        - upgrade_d7_node_complete_slider_page
+        - upgrade_d7_node_complete_superhub_page
+        - upgrade_d7_node_complete_team
+        - upgrade_d7_node_complete_team_page
+        - upgrade_d7_node_complete_team_task
       source: nid
     -
       plugin: node_complete_node_lookup
@@ -129,8 +152,77 @@ destination:
   plugin: 'entity:comment'
 migration_dependencies:
   required:
+    - upgrade_d7_node_complete_action
+    - upgrade_d7_node_complete_article
+    - upgrade_d7_node_complete_blog
+    - upgrade_d7_node_complete_book
+    - upgrade_d7_node_complete_dootrip
+    - upgrade_d7_node_complete_drupal_wall
+    - upgrade_d7_node_complete_edoovillage
+    - upgrade_d7_node_complete_event
+    - upgrade_d7_node_complete_gic
+    - upgrade_d7_node_complete_hub
+    - upgrade_d7_node_complete_labdoo_slide
+    - upgrade_d7_node_complete_labdoo_story
+    - upgrade_d7_node_complete_laptop
+    - upgrade_d7_node_complete_node_gallery_gallery
+    - upgrade_d7_node_complete_node_gallery_item
+    - upgrade_d7_node_complete_page
+    - upgrade_d7_node_complete_private_page
+    - upgrade_d7_node_complete_simplenews
+    - upgrade_d7_node_complete_slider_page
+    - upgrade_d7_node_complete_superhub_page
+    - upgrade_d7_node_complete_team
+    - upgrade_d7_node_complete_team_page
+    - upgrade_d7_node_complete_team_task
     - upgrade_d7_comment_type
   optional:
+    - upgrade_d7_node_complete_action
+    - upgrade_d7_node_complete_article
+    - upgrade_d7_node_complete_blog
+    - upgrade_d7_node_complete_book
+    - upgrade_d7_node_complete_dootrip
+    - upgrade_d7_node_complete_drupal_wall
+    - upgrade_d7_node_complete_edoovillage
+    - upgrade_d7_node_complete_event
+    - upgrade_d7_node_complete_gic
+    - upgrade_d7_node_complete_hub
+    - upgrade_d7_node_complete_labdoo_slide
+    - upgrade_d7_node_complete_labdoo_story
+    - upgrade_d7_node_complete_laptop
+    - upgrade_d7_node_complete_node_gallery_gallery
+    - upgrade_d7_node_complete_node_gallery_item
+    - upgrade_d7_node_complete_page
+    - upgrade_d7_node_complete_private_page
+    - upgrade_d7_node_complete_simplenews
+    - upgrade_d7_node_complete_slider_page
+    - upgrade_d7_node_complete_superhub_page
+    - upgrade_d7_node_complete_team
+    - upgrade_d7_node_complete_team_page
+    - upgrade_d7_node_complete_team_task
     - upgrade_d7_field_collection_type
     - upgrade_d7_comment
     - upgrade_d7_comment_type
+    - upgrade_d7_node_complete_action
+    - upgrade_d7_node_complete_article
+    - upgrade_d7_node_complete_blog
+    - upgrade_d7_node_complete_book
+    - upgrade_d7_node_complete_dootrip
+    - upgrade_d7_node_complete_drupal_wall
+    - upgrade_d7_node_complete_edoovillage
+    - upgrade_d7_node_complete_event
+    - upgrade_d7_node_complete_gic
+    - upgrade_d7_node_complete_hub
+    - upgrade_d7_node_complete_labdoo_slide
+    - upgrade_d7_node_complete_labdoo_story
+    - upgrade_d7_node_complete_laptop
+    - upgrade_d7_node_complete_node_gallery_gallery
+    - upgrade_d7_node_complete_node_gallery_item
+    - upgrade_d7_node_complete_page
+    - upgrade_d7_node_complete_private_page
+    - upgrade_d7_node_complete_simplenews
+    - upgrade_d7_node_complete_slider_page
+    - upgrade_d7_node_complete_superhub_page
+    - upgrade_d7_node_complete_team
+    - upgrade_d7_node_complete_team_page
+    - upgrade_d7_node_complete_team_task
