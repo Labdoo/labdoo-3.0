@@ -4,6 +4,10 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
+    - field.field.node.dootronic.field_additional_editors
+    - field.field.node.dootronic.field_additional_followers
+    - field.field.node.dootronic.field_additional_notes
+    - field.field.node.dootronic.field_additional_notification_em
     - field.field.node.dootronic.field_amp_hours
     - field.field.node.dootronic.field_battery
     - field.field.node.dootronic.field_battery_watt_hours
@@ -12,6 +16,7 @@ dependencies:
     - field.field.node.dootronic.field_current_operating_system
     - field.field.node.dootronic.field_device_type
     - field.field.node.dootronic.field_dooject_weight
+    - field.field.node.dootronic.field_dootrips
     - field.field.node.dootronic.field_edoovillage_destination
     - field.field.node.dootronic.field_geolocation
     - field.field.node.dootronic.field_hard_drive
@@ -22,10 +27,12 @@ dependencies:
     - field.field.node.dootronic.field_manager
     - field.field.node.dootronic.field_memory
     - field.field.node.dootronic.field_model
+    - field.field.node.dootronic.field_pick_me_up
     - field.field.node.dootronic.field_picture
     - field.field.node.dootronic.field_serial_number
     - field.field.node.dootronic.field_status
     - field.field.node.dootronic.field_tagger
+    - field.field.node.dootronic.field_technical_notes
     - field.field.node.dootronic.field_volts
     - node.type.dootronic
   module:
@@ -41,6 +48,10 @@ content:
     weight: 100
     region: content
 hidden:
+  field_additional_editors: true
+  field_additional_followers: true
+  field_additional_notes: true
+  field_additional_notification_em: true
   field_amp_hours: true
   field_battery: true
   field_battery_watt_hours: true
@@ -49,6 +60,7 @@ hidden:
   field_current_operating_system: true
   field_device_type: true
   field_dooject_weight: true
+  field_dootrips: true
   field_edoovillage_destination: true
   field_geolocation: true
   field_hard_drive: true
@@ -59,8 +71,10 @@ hidden:
   field_manager: true
   field_memory: true
   field_model: true
+  field_pick_me_up: true
   field_picture: true
   field_serial_number: true
   field_status: true
   field_tagger: true
+  field_technical_notes: true
   field_volts: true

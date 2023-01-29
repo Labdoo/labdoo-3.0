@@ -3,6 +3,10 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.dootronic.field_additional_editors
+    - field.field.node.dootronic.field_additional_followers
+    - field.field.node.dootronic.field_additional_notes
+    - field.field.node.dootronic.field_additional_notification_em
     - field.field.node.dootronic.field_amp_hours
     - field.field.node.dootronic.field_battery
     - field.field.node.dootronic.field_battery_watt_hours
@@ -11,6 +15,7 @@ dependencies:
     - field.field.node.dootronic.field_current_operating_system
     - field.field.node.dootronic.field_device_type
     - field.field.node.dootronic.field_dooject_weight
+    - field.field.node.dootronic.field_dootrips
     - field.field.node.dootronic.field_edoovillage_destination
     - field.field.node.dootronic.field_geolocation
     - field.field.node.dootronic.field_hard_drive
@@ -21,10 +26,12 @@ dependencies:
     - field.field.node.dootronic.field_manager
     - field.field.node.dootronic.field_memory
     - field.field.node.dootronic.field_model
+    - field.field.node.dootronic.field_pick_me_up
     - field.field.node.dootronic.field_picture
     - field.field.node.dootronic.field_serial_number
     - field.field.node.dootronic.field_status
     - field.field.node.dootronic.field_tagger
+    - field.field.node.dootronic.field_technical_notes
     - field.field.node.dootronic.field_volts
     - filter.format.plain_text
     - node.type.dootronic
@@ -36,6 +43,7 @@ dependencies:
     - geolocation
     - options
     - responsive_image
+    - text
     - user
 third_party_settings:
   field_group:
@@ -75,6 +83,13 @@ third_party_settings:
         - field_volts
         - field_amp_hours
         - field_battery_watt_hours
+        - field_dootrips
+        - field_additional_editors
+        - field_additional_notification_em
+        - field_additional_followers
+        - field_additional_notes
+        - field_technical_notes
+        - field_pick_me_up
       label: 'Additional Information'
       parent_name: group_laptop_information
       region: content
@@ -106,6 +121,36 @@ targetEntityType: node
 bundle: dootronic
 mode: default
 content:
+  field_additional_editors:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 26
+    region: content
+  field_additional_followers:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 28
+    region: content
+  field_additional_notes:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 29
+    region: content
+  field_additional_notification_em:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 27
+    region: content
   field_amp_hours:
     type: number_integer
     label: above
@@ -178,6 +223,14 @@ content:
       prefix_suffix: true
     third_party_settings: {  }
     weight: 21
+    region: content
+  field_dootrips:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 25
     region: content
   field_edoovillage_destination:
     type: entity_reference_label
@@ -277,6 +330,16 @@ content:
     third_party_settings: {  }
     weight: 23
     region: content
+  field_pick_me_up:
+    type: boolean
+    label: hidden
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 31
+    region: content
   field_picture:
     type: responsive_image
     label: above
@@ -308,6 +371,13 @@ content:
       link: true
     third_party_settings: {  }
     weight: 12
+    region: content
+  field_technical_notes:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 30
     region: content
   field_volts:
     type: number_decimal

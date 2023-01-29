@@ -1,0 +1,29 @@
+uuid: d06eb288-9406-441a-8873-a59d3d5dc0fe
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.dootrip.field_dootrip_capacity
+    - node.type.dootrip
+  module:
+    - user
+id: node.dootrip.default
+targetEntityType: node
+bundle: dootrip
+mode: default
+content:
+  field_dootrip_capacity:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

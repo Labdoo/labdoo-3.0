@@ -1,0 +1,22 @@
+uuid: 7950d357-fa0a-476e-a34b-eeff721291c7
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.dootrip.field_dootrip_capacity
+    - node.type.dootrip
+  module:
+    - user
+id: node.dootrip.teaser
+targetEntityType: node
+bundle: dootrip
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_dootrip_capacity: true
