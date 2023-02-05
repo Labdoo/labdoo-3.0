@@ -3,15 +3,25 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.dootrip.field_destination_of_the_trip
     - field.field.node.dootrip.field_dootrip_capacity
+    - field.field.node.dootrip.field_origin_of_the_trip
     - node.type.dootrip
   module:
+    - address
     - user
 id: node.dootrip.default
 targetEntityType: node
 bundle: dootrip
 mode: default
 content:
+  field_destination_of_the_trip:
+    type: address_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 103
+    region: content
   field_dootrip_capacity:
     type: number_integer
     label: above
@@ -20,6 +30,13 @@ content:
       prefix_suffix: true
     third_party_settings: {  }
     weight: 101
+    region: content
+  field_origin_of_the_trip:
+    type: address_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 102
     region: content
   links:
     settings: {  }
