@@ -1,10 +1,5 @@
 <?php
 
-/**
- * @file
- * This module implements the Labdoo blocks.
- */
-
 namespace Drupal\lbd_blocks\Plugin\Block;
 
 use Drupal\Core\Access\AccessResult;
@@ -20,13 +15,11 @@ use Drupal\Core\Session\AccountInterface;
  *   admin_label = @Translation("Block: Hub & Edoovillage"),
  * )
  */
-class BlockHubEdoovillage extends BlockBase
-{
+class BlockHubEdoovillage extends BlockBase {
   /**
    * {@inheritdoc}
    */
-  public function build()
-  {
+  public function build() {
     return [
       '#markup' => $this->t('This is a simple block!'),
     ];
@@ -35,16 +28,14 @@ class BlockHubEdoovillage extends BlockBase
   /**
    * {@inheritdoc}
    */
-  protected function blockAccess(AccountInterface $account)
-  {
+  protected function blockAccess(AccountInterface $account) {
     return AccessResult::allowedIfHasPermission($account, 'access content');
   }
 
   /**
    * {@inheritdoc}
    */
-  public function blockForm($form, FormStateInterface $form_state)
-  {
+  public function blockForm($form, FormStateInterface $form_state) {
     $config = $this->getConfiguration();
 
     return $form;
@@ -53,8 +44,8 @@ class BlockHubEdoovillage extends BlockBase
   /**
    * {@inheritdoc}
    */
-  public function blockSubmit($form, FormStateInterface $form_state)
-  {
+  public function blockSubmit($form, FormStateInterface $form_state) {
     $this->configuration['my_block_settings'] = $form_state->getValue('my_block_settings');
   }
+
 }
