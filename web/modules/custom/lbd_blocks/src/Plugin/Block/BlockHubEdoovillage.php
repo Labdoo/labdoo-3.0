@@ -15,27 +15,38 @@ use Drupal\Core\Session\AccountInterface;
  *   admin_label = @Translation("Block: Hub & Edoovillage"),
  * )
  */
-class BlockHubEdoovillage extends BlockBase {
+class BlockHubEdoovillage extends BlockBase
+{
   /**
    * {@inheritdoc}
    */
-  public function build() {
+  public function build()
+  {
+    $objectString = "Edoovillage";
+    $code .= "<hr/>";
+    $code .= "<p><strong><font color=#009900 size=2px>";
+    $code .= t("Actions available for this $objectString:");
+    $code .= "</font></strong></p>";
+    $code .= "<hr/>";
+
     return [
-      '#markup' => $this->t('This is a simple block!'),
+      '#markup' => $this->t($code),
     ];
   }
 
   /**
    * {@inheritdoc}
    */
-  protected function blockAccess(AccountInterface $account) {
+  protected function blockAccess(AccountInterface $account)
+  {
     return AccessResult::allowedIfHasPermission($account, 'access content');
   }
 
   /**
    * {@inheritdoc}
    */
-  public function blockForm($form, FormStateInterface $form_state) {
+  public function blockForm($form, FormStateInterface $form_state)
+  {
     $config = $this->getConfiguration();
 
     return $form;
@@ -44,8 +55,8 @@ class BlockHubEdoovillage extends BlockBase {
   /**
    * {@inheritdoc}
    */
-  public function blockSubmit($form, FormStateInterface $form_state) {
+  public function blockSubmit($form, FormStateInterface $form_state)
+  {
     $this->configuration['my_block_settings'] = $form_state->getValue('my_block_settings');
   }
-
 }
