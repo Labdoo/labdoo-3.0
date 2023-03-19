@@ -22,17 +22,16 @@ class BlockHubEdoovillage extends BlockBase {
    */
   public function build() {
     $object_string = "Edoovillage";
-    $code = '';
-    $code .= '<hr/>';
-    $code .= '<p><strong><font color=#009900 size=2px>';
+    $code = "";
+    $code .= "<hr/>";
+    $code .= "<p><strong><font color=#009900 size=2px>";
     $replacements['@object_string'] = "Actions available for this $object_string:";
-    $code .= $this->t('@object_string', $replacements);
-    $code .= '</font></strong></p>';
-    $code .= '<hr/>';
+    $code .= $this->t("@object_string", $replacements);
+    $code .= "</font></strong></p>";
+    $code .= "<hr/>";
 
-    $replacements['@code'] = $code;
     return [
-      '#markup' => $this->t('@code', $replacements),
+      '#markup' => $this->t($code),
     ];
   }
 
