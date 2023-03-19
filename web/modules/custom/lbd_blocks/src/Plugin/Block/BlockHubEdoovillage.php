@@ -15,48 +15,47 @@ use Drupal\Core\Session\AccountInterface;
  *   admin_label = @Translation("Block: Hub & Edoovillage"),
  * )
  */
-class BlockHubEdoovillage extends BlockBase
-{
+class BlockHubEdoovillage extends BlockBase {
+
   /**
    * {@inheritdoc}
    */
-  public function build()
-  {
-    $objectString = "Edoovillage";
-    $code .= "<hr/>";
-    $code .= "<p><strong><font color=#009900 size=2px>";
-    $code .= t("Actions available for this $objectString:");
-    $code .= "</font></strong></p>";
-    $code .= "<hr/>";
+  public function build() {
+    $object_string = "Edoovillage";
+    $code = '';
+    $code .= '<hr/>';
+    $code .= '<p><strong><font color=#009900 size=2px>';
+    $replacements['@object_string'] = "Actions available for this $object_string:";
+    $code .= $this->t('@object_string', $replacements);
+    $code .= '</font></strong></p>';
+    $code .= '<hr/>';
 
+    $replacements['@code'] = $code;
     return [
-      '#markup' => $this->t($code),
+      '#markup' => $this->t('@code', $replacements),
     ];
   }
 
   /**
    * {@inheritdoc}
    */
-  protected function blockAccess(AccountInterface $account)
-  {
+  protected function blockAccess(AccountInterface $account) {
     return AccessResult::allowedIfHasPermission($account, 'access content');
   }
 
   /**
    * {@inheritdoc}
    */
-  public function blockForm($form, FormStateInterface $form_state)
-  {
-    $config = $this->getConfiguration();
-
+  public function blockForm($form, FormStateInterface $form_state) {
+    // $config = $this->getConfiguration();
     return $form;
   }
 
   /**
    * {@inheritdoc}
    */
-  public function blockSubmit($form, FormStateInterface $form_state)
-  {
+  public function blockSubmit($form, FormStateInterface $form_state) {
     $this->configuration['my_block_settings'] = $form_state->getValue('my_block_settings');
   }
+
 }
