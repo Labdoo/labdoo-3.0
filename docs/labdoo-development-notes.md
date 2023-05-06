@@ -94,8 +94,8 @@ git checkout <branch>
 ddev composer install
 ddev drush updb
 ddev drush cim
-ddev drush cim
 ddev drush cr
+ddev drush cim
 ```
 
 ### Printing a message to the logger / watchdog
