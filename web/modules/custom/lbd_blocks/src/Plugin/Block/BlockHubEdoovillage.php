@@ -23,15 +23,23 @@ class BlockHubEdoovillage extends BlockBase {
   public function build() {
     $object_string = "Edoovillage";
     $code = "";
-    $code .= "<hr/>";
     $code .= "<p><strong><font color=#009900 size=2px>";
     $replacements['@object_string'] = "Actions available for this $object_string:";
     $code .= $this->t("@object_string", $replacements);
     $code .= "</font></strong></p>";
+
+    // Disable the block title.
+//    $build['#title_display'] = 'hidden';
+
+    $album_uri = "xxx";
+    $code .= "<p><a href='$album_uri'><img src='/themes/custom/bootstrap_labdoo/images/photo-album-icon.png' width='25px'/>&nbsp;" . 
+    t("Go to photo album") . "</a></p> ";
+
     $code .= "<hr/>";
 
     return [
       '#markup' => $this->t($code),
+//      '#title_display' => 'hidden',
     ];
   }
 
