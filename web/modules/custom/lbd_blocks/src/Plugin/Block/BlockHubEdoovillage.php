@@ -28,9 +28,6 @@ class BlockHubEdoovillage extends BlockBase {
     $code .= $this->t("@object_string", $replacements);
     $code .= "</font></strong></p>";
 
-    // Disable the block title.
-//    $build['#title_display'] = 'hidden';
-
     $album_uri = "xxx";
     $code .= "<p><a href='$album_uri'><img src='/themes/custom/bootstrap_labdoo/images/photo-album-icon.png' width='25px'/>&nbsp;" . 
     t("Go to photo album") . "</a></p> ";
@@ -39,7 +36,6 @@ class BlockHubEdoovillage extends BlockBase {
 
     return [
       '#markup' => $this->t($code),
-//      '#title_display' => 'hidden',
     ];
   }
 
@@ -47,7 +43,23 @@ class BlockHubEdoovillage extends BlockBase {
    * {@inheritdoc}
    */
   protected function blockAccess(AccountInterface $account) {
-    return AccessResult::allowedIfHasPermission($account, 'access content');
+
+    // Check if the current page is a node page.
+    $route_match = \Drupal::routeMatch();
+    $node = $route_match->getParameter('node');
+    if ($node instanceof \Drupal\node\NodeInterface) {
+      // If the current page is a node page, check the node type.
+      if ($node->getType() === 'edoovillage' || $node->getType() === 'hub') {
+        // Allow access to the block.
+        return AccessResult::allowed();
+      } else {
+        // Deny access to the block.
+        return AccessResult::forbidden();
+      }
+    }
+
+    // If the current page is not a node page, deny access to the block.
+    return AccessResult::forbidden();
   }
 
   /**
