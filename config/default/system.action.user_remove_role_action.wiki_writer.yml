@@ -1,0 +1,14 @@
+uuid: 44d818ca-dde3-4da1-aeb3-3a767f8b4887
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.wiki_writer
+  module:
+    - user
+id: user_remove_role_action.wiki_writer
+label: 'Remove the wiki writer role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: wiki_writer

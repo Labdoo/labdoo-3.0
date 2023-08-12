@@ -1,0 +1,14 @@
+uuid: 24d99714-fe85-4d13-9a2e-c85a8b0b4ed5
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.team_manager
+  module:
+    - user
+id: user_add_role_action.team_manager
+label: 'Add the team manager role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: team_manager

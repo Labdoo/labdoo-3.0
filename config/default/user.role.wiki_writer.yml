@@ -1,0 +1,9 @@
+uuid: df27746f-40fd-47a6-8649-7e4dacda6563
+langcode: en
+status: true
+dependencies: {  }
+id: wiki_writer
+label: 'wiki writer'
+weight: 8
+is_admin: null
+permissions: {  }

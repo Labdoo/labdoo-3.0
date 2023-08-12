@@ -1,0 +1,9 @@
+uuid: 84f7f997-689a-4996-bdb2-faa43588527b
+langcode: en
+status: true
+dependencies: {  }
+id: laptop_manager
+label: 'laptop manager'
+weight: 9
+is_admin: null
+permissions: {  }

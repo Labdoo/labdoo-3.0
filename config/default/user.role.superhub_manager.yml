@@ -1,0 +1,9 @@
+uuid: 21c6475f-744e-41b2-94e5-cc9b446295e7
+langcode: en
+status: true
+dependencies: {  }
+id: superhub_manager
+label: 'superhub manager'
+weight: 4
+is_admin: null
+permissions: {  }

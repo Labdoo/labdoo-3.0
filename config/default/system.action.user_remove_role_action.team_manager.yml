@@ -1,0 +1,14 @@
+uuid: 19aade68-f250-41cc-bc52-df2aa4ececaf
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.team_manager
+  module:
+    - user
+id: user_remove_role_action.team_manager
+label: 'Remove the team manager role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: team_manager

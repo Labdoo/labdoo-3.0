@@ -1,0 +1,14 @@
+uuid: 6ff7465a-7423-4a3e-ac5e-bffa43cbb522
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.superhub_manager
+  module:
+    - user
+id: user_remove_role_action.superhub_manager
+label: 'Remove the superhub manager role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: superhub_manager

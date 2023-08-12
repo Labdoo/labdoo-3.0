@@ -1,0 +1,9 @@
+uuid: 1fe0fe17-79fb-4e06-bec5-6d8258275afc
+langcode: en
+status: true
+dependencies: {  }
+id: edoovillage_manager
+label: 'edoovillage manager'
+weight: 6
+is_admin: null
+permissions: {  }
