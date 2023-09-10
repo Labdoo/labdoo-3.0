@@ -33,6 +33,7 @@
         "drupal/geolocation": "^3.9",
         "drupal/gin": "^3.0@alpha",
         "drupal/gin_toolbar": "^1.0@beta",
+        "drupal/paragraphs": "^1.15",
         "drush/drush": "^11.0",
         "geocoder-php/google-maps-provider": "^4.6"
     },

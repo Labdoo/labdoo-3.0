@@ -1,0 +1,21 @@
+uuid: 0e374c20-027c-4927-8493-d6f28228c8d4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_story_text
+    - paragraphs.paragraphs_type.story_section
+  module:
+    - text
+id: paragraph.story_section.field_story_text
+field_name: field_story_text
+entity_type: paragraph
+bundle: story_section
+label: 'Story text'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

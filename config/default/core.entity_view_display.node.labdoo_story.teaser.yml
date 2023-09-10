@@ -1,0 +1,22 @@
+uuid: 63851b10-0ac6-4e7b-bed2-5fe018af6c9e
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.labdoo_story.field_story_section
+    - node.type.labdoo_story
+  module:
+    - user
+id: node.labdoo_story.teaser
+targetEntityType: node
+bundle: labdoo_story
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_story_section: true

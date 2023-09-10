@@ -1,0 +1,10 @@
+uuid: adea1334-f2a4-4a58-84e5-f896a3d3ccbd
+langcode: en
+status: true
+dependencies: {  }
+id: story_section
+label: 'Story section'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }
