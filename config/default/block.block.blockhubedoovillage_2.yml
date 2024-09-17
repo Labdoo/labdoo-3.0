@@ -1,0 +1,21 @@
+uuid: c40e2ea2-67c7-4164-a4d8-b494e059239d
+langcode: en
+status: true
+dependencies:
+  module:
+    - lbd_blocks
+  theme:
+    - bootstrap_labdoo
+id: blockhubedoovillage_2
+theme: bootstrap_labdoo
+region: sidebar_second
+weight: 0
+provider: null
+plugin: lbd_block_hub_edoovillage
+settings:
+  id: lbd_block_hub_edoovillage
+  label: 'Block: Hub & Edoovillage'
+  label_display: '0'
+  provider: lbd_blocks
+  my_block_settings: null
+visibility: {  }

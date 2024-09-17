@@ -1,0 +1,30 @@
+uuid: 367f16dc-51d5-4027-9b2a-970efd1f2f2b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.labdoo_story.field_story_section
+    - node.type.labdoo_story
+  module:
+    - entity_reference_revisions
+    - user
+id: node.labdoo_story.default
+targetEntityType: node
+bundle: labdoo_story
+mode: default
+content:
+  field_story_section:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

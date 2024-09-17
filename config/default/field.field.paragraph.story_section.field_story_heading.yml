@@ -1,0 +1,21 @@
+uuid: cb006a1e-ddcb-4509-8c5b-c11421e71b11
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_story_heading
+    - paragraphs.paragraphs_type.story_section
+  module:
+    - text
+id: paragraph.story_section.field_story_heading
+field_name: field_story_heading
+entity_type: paragraph
+bundle: story_section
+label: 'Story heading'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

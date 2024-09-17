@@ -1,0 +1,14 @@
+uuid: f1d98ea2-6f5e-4821-9685-6fb0afcce8cf
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.wiki_writer
+  module:
+    - user
+id: user_add_role_action.wiki_writer
+label: 'Add the wiki writer role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: wiki_writer

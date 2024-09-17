@@ -1,0 +1,14 @@
+uuid: 51c7bce2-c032-4999-aecf-70cb8735a9b5
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.hub_manager
+  module:
+    - user
+id: user_remove_role_action.hub_manager
+label: 'Remove the hub manager role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: hub_manager
